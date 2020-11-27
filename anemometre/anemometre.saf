@@ -1,0 +1,130 @@
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Signal Activity File Name: "C:/Users/Etudiant/Desktop/projet/anemometre/anemometre.saf"
+# Created On: "09/28/2020 10:39:57"
+# Created By: "Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition"
+# This file was created by the Quartus(R) II Simulator with glitch filtering disabled.
+
+FORMAT_VERSION 1;
+
+DEFINE_FLAG TOGGLE_RATE_FROM_SIMULATION 0x1;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_SIMULATION 0x2;
+DEFINE_FLAG TOGGLE_RATE_FROM_USER 0x4;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_USER 0x8;
+DEFINE_FLAG TOGGLE_RATE_FROM_USER_DEFAULT 0x10;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_USER_DEFAULT 0x20;
+DEFINE_FLAG TOGGLE_RATE_FROM_VECTORLESS_ESTIMATION 0x40;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_VECTORLESS_ESTIMATION 0x80;
+DEFINE_FLAG TOGGLE_RATE_ASSUMED_ZERO 0x100;
+DEFINE_FLAG TOGGLE_RATE_CLIPPED_TO_MAX 0x200;
+
+BEGIN_OUTPUT_SIGNAL_INFO;
+
+# Output Signal Information Line Format Description:
+
+# <one or more spaces><partial output signal name><spaces>[<flags mask><spaces><toggle rate><spaces><static probability>]<;>
+
+ Add0~0 0x3 2e+007 0.2025;
+ Add0~1 0x3 1.99e+007 0.0995;
+ Add0~2 0x3 1.985e+007 0.69625;
+ Add0~3 0x3 0 0;
+ Add0~4 0x3 0 0;
+ Add0~5 0x3 0 0;
+ Add0~6 0x3 0 0;
+ Add0~7 0x3 0 0;
+ Add0~8 0x3 0 0;
+ Add0~9 0x3 0 0;
+ Add0~10 0x3 0 0;
+ Add0~11 0x3 0 0;
+ Add0~12 0x3 0 0;
+ Add1~0 0x3 3.99e+007 0.2995;
+ Add1~1 0x3 2e+007 0.1;
+ Add1~2 0x3 2e+007 0.299;
+ Add1~3 0x3 0 0;
+ Add1~4 0x3 0 0;
+ Add1~5 0x3 0 0;
+ Add1~6 0x3 0 0;
+ Add1~7 0x3 0 0;
+ Add1~8 0x3 0 0;
+ Add1~9 0x3 0 0;
+ Add1~10 0x3 0 0;
+ Add1~11 0x3 0 0;
+ Add1~12 0x3 0 0;
+ araz 0x3 50000 0.999;
+ clk 0x3 1.995e+007 0.5;
+ cpt_sig[0] 0x3 5.99e+007 0.2995;
+ cpt_sig[1] 0x3 2e+007 0.2;
+ cpt_sig[2] 0x3 1.99e+007 0.199;
+ cpt_sig[3] 0x3 0 0;
+ cpt_sig[4] 0x3 0 0;
+ cpt_sig[5] 0x3 0 0;
+ cpt_sig[6] 0x3 0 0;
+ cpt_sig[7] 0x3 0 0;
+ cpt_sig~0 0x3 0 0;
+ cpt_sig~1 0x3 0 0;
+ cpt_sig~2 0x3 0 0;
+ cpt_sig~3 0x3 0 0;
+ cpt_sig~4 0x3 0 0;
+ cpt_sig~5 0x3 2e+007 0.249;
+ cpt_sig~6 0x3 3.99e+007 0.24975;
+ cpt_sig~7 0x3 5.985e+007 0.2505;
+ data[0] 0x3 50000 0.99725;
+ data[0]~reg0 0x3 50000 0.99725;
+ data[1] 0x3 100000 0.005;
+ data[1]~reg0 0x3 100000 0.005;
+ data[2] 0x3 50000 0.99225;
+ data[2]~reg0 0x3 50000 0.99225;
+ data[3] 0x3 0 0;
+ data[3]~reg0 0x3 0 0;
+ data[4] 0x3 0 0;
+ data[4]~reg0 0x3 0 0;
+ data[5] 0x3 0 0;
+ data[5]~reg0 0x3 0 0;
+ data[6] 0x3 0 0;
+ data[6]~reg0 0x3 0 0;
+ data[7] 0x3 0 0;
+ data[7]~reg0 0x3 0 0;
+ data_sig[0] 0x3 3.99e+007 0.1995;
+ data_sig[1] 0x3 2e+007 0.202;
+ data_sig[2] 0x3 1.985e+007 0.59675;
+ data_sig[3] 0x3 0 0;
+ data_sig[4] 0x3 0 0;
+ data_sig[5] 0x3 0 0;
+ data_sig[6] 0x3 0 0;
+ data_sig[7] 0x3 0 0;
+ data_sig~0 0x3 0 0;
+ data_sig~1 0x3 0 0;
+ data_sig~2 0x3 0 0;
+ data_sig~3 0x3 0 0;
+ data_sig~4 0x3 0 0;
+ data_sig~5 0x3 1.985e+007 0.64675;
+ data_sig~6 0x3 2e+007 0.20225;
+ data_sig~7 0x3 5.99e+007 0.2495;
+ data~0 0x3 0 0;
+ data~1 0x3 0 0;
+ data~2 0x3 0 0;
+ data~3 0x3 0 0;
+ data~4 0x3 0 0;
+ data~5 0x3 50000 0.9925;
+ data~6 0x3 100000 0.005;
+ data~7 0x3 50000 0.9975;
+ in_freq 0x3 1.9995e+008 0.5;
+
+END_OUTPUT_SIGNAL_INFO;
+
+TOGGLE_PERCENTAGE 35.2941;
+
+PERCENTAGE_OF_TIME_SIGNALS_IN_UNKNOWN_STATE 0;
+

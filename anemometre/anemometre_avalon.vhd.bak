@@ -1,0 +1,69 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity anemometre_avalon is
+port
+(
+clk, config, write_n, reset_n : in std_logic;
+writedata : in std_logic_vector (15 downto 0);
+readdata : out std_logic_vector (15 downto 0);
+address: std_logic_vector (1 downto 0);
+);
+end anemometre_avalon;
+
+ARCHITECTURE arch_anemometre_avalon of anemometre_avalon IS
+
+component anemometre
+port
+(
+	raz_n, clk_50M : in std_logic;
+	start_stop, continu : in std_logic;
+	in_freq_anemometre : in std_logic;
+	data_anemometre : out std_logic_vector ( 7 downto 0);
+	data_valid : out std_logic
+);
+end component;
+
+signal start_stop, continu, in_freq_anemometre, raz_n, clk_50M, data_valid : std_logic;
+signal data_anemometre : std_logic_vector ( 7 downto 0);
+
+BEGIN
+
+process_write : process (clk, reset_n)
+begin
+if reset_n = '0' then
+	freq <= (others => '0');
+	duty <= (others => '0');
+	control <= (others => '0');
+	elsif clk'event and clk = '1' then
+	if chipselect ='1' and write_n = '0' then
+		if address = "00" then
+			freq <= writedata;
+		end if;
+		if address = "01" then
+			duty <= writedata;
+		end if;
+		if address = "10" then
+			control <= writedata (1 downto 0);
+		end if;
+	end if;
+end if;
+end process;
+
+-- lecture registres
+process_Read : process(address, freq, duty, control)
+BEGIN
+case address is
+when "00" => readdata <= freq ;
+when "01" => readdata <= duty ;
+when "10" => readdata <= X"000"&"00"&control ;
+when others => readdata <= (others => '0');
+end case;
+END PROCESS process_Read ;
+
+C1 : anemometre port map(raz_n, clk_50M, start_stop, continu, in_freq_anemometre, data_anemometre, data_valid);
+
+
+END arch_anemometre_avalon ;

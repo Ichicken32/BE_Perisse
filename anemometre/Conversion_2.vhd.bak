@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity Conversion_2 is
+port
+(
+	araz, clk : in std_logic;
+	in_freq : in std_logic;
+	data : out std_logic_vector(7 downto 0)
+);
+end Conversion_2;
+
+architecture ar of Conversion_2 is
+
+signal cpt_sig : std_logic_vector ( 7 downto 0);
+signal raz_sig : std_logic;
+
+begin
+	
+	process(araz, in_freq)
+		begin
+		if (araz = '0') then
+			cpt_sig <=(others =>'0');
+				elsif (in_freq='1' and in_freq'event)
+				then
+						cpt_sig <= cpt_sig+1;				
+		end if;
+	end process;
+
+data <= cpt_sig when raz_sig='0' else
+	    '0';
+
+end ar;

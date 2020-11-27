@@ -1,0 +1,15 @@
+Info: Saving your IP search path in C:\Users\chicken\AppData\Roaming\SPB_16.6\.altera.quartus\ip\11.1sp2\ip_search_path\user_components.ipx
+Info: Using factories: CuspFactory, ImportFactory, DSPBuilderFactory, JarFactory, QvarFactory, TclModuleFactory, MegaVariationFactory, BeanElementFactory, LegacyFactory, DDRLegacyFactory, PresetFactory, EmbeddedSwTclDriverFactory, QsysFactory
+Progress: (0) searching C:/Users/chicken/Desktop/BE_VHDL/anemometre/11.1sp2 (command line switch)
+Info: C:/Users/chicken/Desktop/BE_VHDL/anemometre/11.1sp2 matched 1 files in 0.00 seconds
+Info: Found 0 components
+Nov 23, 2020 10:06:04 AM com.altera.utilities.Launcher launch
+INFO: Launching:c:/altera/11.1sp2/quartus//bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Users/chicken/Desktop/BE_VHDL/anemometre/Avalon_Anemometre.vhd --source=C:/Users/chicken/Desktop/BE_VHDL/anemometre/Avalon_Anemometre.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/chicken/AppData/Local/Temp/alt8589_6032091271809864023.dir/0001_sopcqmap/
+Nov 23, 2020 10:13:14 AM com.altera.utilities.Launcher launch
+INFO: Launching:c:/altera/11.1sp2/quartus//bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Users/chicken/Desktop/BE_VHDL/anemometre/Avalon_Anemometre.vhd --source=C:/Users/chicken/Desktop/BE_VHDL/anemometre/Avalon_Anemometre.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/chicken/AppData/Local/Temp/alt8589_6032091271809864023.dir/0002_sopcqmap/
+Nov 23, 2020 10:13:16 AM com.altera.utilities.Launcher launch
+INFO: Launching:c:\altera\11.1sp2\quartus//bin/quartus_sh.exe -t sopc_add_qip_file.tcl
+Nov 23, 2020 10:13:17 AM com.altera.utilities.Launcher launch
+INFO: Launching:C:/altera/11.1sp2/quartus/bin/cygwin/bin/sh.exe -c . C:/altera/11.1sp2/quartus/sopc_builder/bin/nios_sh ; C:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder --classic --no_splash --refresh C:/Users/chicken/Desktop/BE_VHDL/sopc_Q11/Sopc.ptf
+Nov 23, 2020 10:13:29 AM com.altera.utilities.Launcher launch
+INFO: Launching:C:/altera/11.1sp2/quartus/bin/cygwin/bin/sh.exe -c . C:/altera/11.1sp2/quartus/sopc_builder/bin/nios_sh ; C:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder --classic --generate C:/Users/chicken/Desktop/BE_VHDL/sopc_Q11/Sopc.ptf

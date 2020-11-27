@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.867 ns
+From           : raz_n
+To             : Conversion:C2|data_sig[6]
+From Clock     : --
+To Clock       : in_freq_anemometre
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.321 ns
+From           : cmd:C4|data_sig[6]
+To             : data_anemometre[6]
+From Clock     : clk_50M
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.150 ns
+From           : start_stop
+To             : data_anemometre[6]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.059 ns
+From           : continu
+To             : cmd:C4|data_sig[7]
+From Clock     : --
+To Clock       : clk_50M
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk_50M'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 237.98 MHz ( period = 4.202 ns )
+From           : prediv_1s:C3|cpt[23]
+To             : prediv_1s:C3|clk_sig
+From Clock     : clk_50M
+To Clock       : clk_50M
+Failed Paths   : 0
+
+Type           : Clock Setup: 'in_freq_anemometre'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 436.68 MHz ( period = 2.290 ns )
+From           : Conversion:C2|data_sig[0]
+To             : Conversion:C2|data[7]
+From Clock     : in_freq_anemometre
+To Clock       : in_freq_anemometre
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
