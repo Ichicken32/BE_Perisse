@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri Nov 27 10:08:18 2020
-Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
+Fitter Status : Successful - Mon Nov 30 09:13:59 2020
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
 Revision Name : anemometre
-Top-level Entity Name : anemometre_avalon
+Top-level Entity Name : anemometre
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 0 / 33,216 ( 0 % )
-    Total combinational functions : 0 / 33,216 ( 0 % )
-    Dedicated logic registers : 0 / 33,216 ( 0 % )
-Total registers : 0
-Total pins : 38 / 475 ( 8 % )
+Total logic elements : 95 / 33,216 ( < 1 % )
+    Total combinational functions : 87 / 33,216 ( < 1 % )
+    Dedicated logic registers : 62 / 33,216 ( < 1 % )
+Total registers : 62
+Total pins : 14 / 475 ( 3 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )

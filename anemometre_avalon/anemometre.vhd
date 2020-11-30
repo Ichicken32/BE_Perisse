@@ -1,0 +1,69 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity anemometre is
+port
+(
+	raz_n, clk_50M : in std_logic;
+	start_stop, continu : in std_logic;
+	in_freq_anemometre : in std_logic;
+	data_anemometre : out std_logic_vector ( 7 downto 0);
+	data_valid : out std_logic
+);
+end anemometre;
+
+architecture ar of anemometre is
+
+component prediv_1000
+port
+(
+	araz, clk : in std_logic;
+	clk_out : out std_logic
+);
+end component;
+
+component Conversion
+port
+(
+	araz, clk : in std_logic;
+	in_freq : in std_logic;
+	data : out std_logic_vector(7 downto 0)
+);
+end component;
+
+component prediv_1s
+port
+(
+	araz, clk : in std_logic;
+	clk_out : out std_logic
+);
+end component;
+
+component cmd
+port
+(
+	araz, clk : in std_logic;
+	start_stop, continu : in std_logic;
+	data_in : in std_logic_vector ( 7 downto 0);
+	data_out : out std_logic_vector ( 7 downto 0);
+	data_valid : out std_logic
+);
+end component;
+
+signal clk_1000, clk_1s : std_logic;
+signal data_sig : std_logic_vector ( 7 downto 0);
+
+begin
+
+C1 : prediv_1000 port map(raz_n, clk_50M, clk_1000);
+
+C2 : Conversion port map(raz_n, clk_1000, in_freq_anemometre, data_sig);
+
+C3 : prediv_1s port map(raz_n, clk_50M, clk_1s);
+
+C4 : cmd port map(raz_n, clk_1s, start_stop, continu, data_sig, data_anemometre, data_valid);
+
+end ar;
+

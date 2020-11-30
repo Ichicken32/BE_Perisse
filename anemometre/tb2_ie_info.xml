@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for Altera-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>32</AddressBits>
+		<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus_fit --read_settings_files=off --write_settings_files=off anemometre -c anemometre</CommandLine>
+		<ErrorMessage>IO is not placed in the IO-manager.</ErrorMessage>
+		<Line>2436</Line>
+		<Platform>windows</Platform>
+		<SourceFile>/quartus/fitter/fsac/fsac_place_pin_op_impl.cpp</SourceFile>
+		<StackTrace>
+	  0xef3e309: FITTER_FSAC + 0xce309 (?all_io_atoms_must_be_in_io_manager@FSAC_PLACE_PIN_OP_IMPL@@ABEXXZ + 0x1c9)
+	  0xef3eace: FITTER_FSAC + 0xceace (?work@FSAC_PLACE_PIN_OP_IMPL@@QAE_NXZ + 0xfe)
+	  0xeb933ab: fitter_fmag + 0x33ab (?fitter_preparation@FMAG_EXPERT@@UBE_NXZ + 0xbcb)
+	  0xe2a1677:
+	  0x3369c10: FITTER_FMAIN + 0x9c10 (?fmain_start@@YA_NPAVCMP_FACADE@@@Z + 0x710)
+	   0x407c1c: quartus_fit + 0x7c1c (?qfit_execute_fit@@YA_NPAVQFIT_FRAMEWORK@@@Z + 0x19c)
+	   0x412275: quartus_fit + 0x12275 (?execute@QFIT_FRAMEWORK@@UAE_NXZ + 0x4b5)
+	   0xd6ff71: comp_qexe + 0xff71 (?get_command_line@QEXE_ARGS@@QBEPBDXZ + 0x14c1)
+	   0xd72474: comp_qexe + 0x12474 (?qexe_process_cmdline_arguments@@YA_NPAVQEXE_CMDLINE@@HPAPBD@Z + 0x3d4)
+	   0xd72563: comp_qexe + 0x12563 (?qexe_standard_main@@YAHPAVQEXE_FRAMEWORK@@PAPBUQEXE_OPTION_DEFINITION@@HPAPBD@Z + 0x83)
+	   0x40bfae: quartus_fit + 0xbfae (?qfit_main@@YAHHPAPBD@Z + 0x5e)
+	   0xe41c61: CCL_MSG + 0x1c61 (?msg_main_thread@@YAPAXPAX@Z + 0x11)
+	 0x10001be8: ccl_thr + 0x1be8 (_thr_final_wrapper + 0x8)
+	   0xe41bd5: CCL_MSG + 0x1bd5 (?msg_thread_wrapper@@YAPAXP6APAXPAX@Z0@Z + 0x85)
+	   0xdc429a: ccl_mem + 0x429a (?mem_thread_wrapper@@YAPAXP6APAXPAX@Z0@Z + 0x4a)
+	   0xe6b5d1: CCL_MSG + 0x2b5d1 (?msg_exe_main@@YAHHPAPBDP6AHH0@Z@Z + 0x81)
+	   0x40c44c: quartus_fit + 0xc44c (_main + 0x1c)
+	   0x414377: quartus_fit + 0x14377 (_memset + 0x15f)
+	 0x7533fa28: KERNEL32 + 0x1fa28 (BaseThreadInitThunk + 0x18)
+	 0x773375f3: ntdll + 0x675f3 (RtlGetAppContainerNamedObjectPath + 0xe3)
+	 0x773375c3: ntdll + 0x675c3 (RtlGetAppContainerNamedObjectPath + 0xb3)
+		</StackTrace>
+		<Subsystem>FSAC</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>84440849534662.160672388519032</CompileID>
+			<DeviceFamily>Cyclone II</DeviceFamily>
+			<IncrementalCompilation>FULL_INCREMENTAL_COMPILATION</IncrementalCompilation>
+			<TopLevelEntityName>anemometre_avalon</TopLevelEntityName>
+		</Compilation>
+		<DateInvoked>2020/11/30 09:11:26</DateInvoked>
+		<ElapsedTime>1</ElapsedTime>
+		<IP>192.168.1.79</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>false</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>4</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>3792</CPUSpeed>
+			<Hostname>DESKTOP-72FANJJ</Hostname>
+			<NIC>
+				<Address>4ccc6ad74ec6</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+			<TotalVirtualRAM>0</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus_fit</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName>anemometre</ProjectName>
+			<Revision>anemometre</Revision>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>84440849534662.160328939310208</InstallationID>
+			<Version>
+				<Build>259</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>2</ServicePack>
+				<VersionNumber>11.1</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>84440849534662.16032894210788</UserID>
+			<UserName>chicken</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2011-08-26</SchemaVersion>
+</ProgramExecution>
+

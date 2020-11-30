@@ -1,7 +1,7 @@
-Quartus II 32-bit
-Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-14
-1343
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
 OFF
 OFF
 OFF
@@ -10,8 +10,6 @@ ON
 ON
 FV_OFF
 Level2
-0
-0
 0
 0
 VRSM_ON
@@ -24,8 +22,8 @@ VHSM_ON
 # entity
 anemometre
 # storage
-db|anemometre.(1).cnf
-db|anemometre.(1).cnf
+db|anemometre.(0).cnf
+db|anemometre.(0).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -45,23 +43,20 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
-# user_parameter {
- constraint(data_anemometre)
-7 downto 0
-PARAMETER_STRING
-USR
-}
 # hierarchies {
 anemometre:C1
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
 # entity
 prediv_1000
 # storage
-db|anemometre.(2).cnf
-db|anemometre.(2).cnf
+db|anemometre.(1).cnf
+db|anemometre.(1).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -84,14 +79,17 @@ ON
 # hierarchies {
 anemometre:C1|prediv_1000:C1
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
 # entity
 Conversion
 # storage
-db|anemometre.(3).cnf
-db|anemometre.(3).cnf
+db|anemometre.(2).cnf
+db|anemometre.(2).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -120,14 +118,17 @@ USR
 # hierarchies {
 anemometre:C1|Conversion:C2
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
 # entity
 prediv_1s
 # storage
-db|anemometre.(4).cnf
-db|anemometre.(4).cnf
+db|anemometre.(3).cnf
+db|anemometre.(3).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -150,14 +151,17 @@ ON
 # hierarchies {
 anemometre:C1|prediv_1s:C3
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
 # entity
 cmd
 # storage
-db|anemometre.(5).cnf
-db|anemometre.(5).cnf
+db|anemometre.(4).cnf
+db|anemometre.(4).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -190,14 +194,17 @@ USR
 # hierarchies {
 anemometre:C1|cmd:C4
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
 # entity
 anemometre_avalon
 # storage
-db|anemometre.(0).cnf
-db|anemometre.(0).cnf
+db|anemometre.(5).cnf
+db|anemometre.(5).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -220,6 +227,9 @@ ON
 # hierarchies {
 |
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end

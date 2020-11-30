@@ -1,0 +1,82 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+15
+1490
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+pwm_nano
+# storage
+db|PWM.(0).cnf
+db|PWM.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+pwm_nano.vhd
+fb85f128ee50b8b06030bbe83762604d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# macro_sequence
+
+# end
+# entity
+avalon_pwm
+# storage
+db|PWM.(1).cnf
+db|PWM.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+avalon_pwm.vhd
+d82c9832e33c4263d236eb897bdc8a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,2 @@
+Nov 27, 2020 11:33:49 AM com.altera.utilities.Launcher launch
+INFO: Launching:c:/altera/11.1sp2/quartus//bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Users/chicken/Desktop/BE_VHDL/PWM_avalon/avalon_pwm.vhd --source=C:/Users/chicken/Desktop/BE_VHDL/PWM_avalon/avalon_pwm.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/chicken/AppData/Local/Temp/alt8593_215097391387259279.dir/0001_sopcqmap/

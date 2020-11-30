@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for Altera-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>32</AddressBits>
+		<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus</CommandLine>
+		<ErrorMessage>Access Violation at 0X670E85AF</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	 0x670e85ae: QtCore4 + 0xe85ae (?retrieveData@QMimeData@@MBE?AVQVariant@@ABVQString@@W4Type@2@@Z + 0x57e)
+	 0x76566fec: ole32 + 0x26fec (GetRunningObjectTable + 0x33c)
+	 0x773153fd: ntdll + 0x453fd (RtlAllocateHeap + 0x3d)
+	 0x641f3db7: MSVCR90 + 0x63db7 (malloc + 0x78)
+	 0x67053813: QtCore4 + 0x53813 (?fromLatin1_helper@QString@@CAPAUData@1@PBDH@Z + 0x63)
+	 0x670e8d0c: QtCore4 + 0xe8d0c (?text@QMimeData@@QBE?AVQString@@XZ + 0x5c)
+	 0x6507acc8: QtGui4 + 0x7acc8 (?ownsMode@QClipboard@@ABE_NW4Mode@1@@Z + 0x18)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2020/11/27 08:44:35</DateInvoked>
+		<ElapsedTime>446</ElapsedTime>
+		<IP>192.168.1.79</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>true</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>4</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>3792</CPUSpeed>
+			<Hostname>DESKTOP-72FANJJ</Hostname>
+			<NIC>
+				<Address>4ccc6ad74ec6</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+			<TotalVirtualRAM>0</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>84440849534662.160328939310208</InstallationID>
+			<Version>
+				<Build>259</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>2</ServicePack>
+				<VersionNumber>11.1</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>84440849534662.16032894210788</UserID>
+			<UserName>chicken</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2011-08-26</SchemaVersion>
+</ProgramExecution>
+

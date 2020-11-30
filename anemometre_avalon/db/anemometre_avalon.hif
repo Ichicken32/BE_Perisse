@@ -1,0 +1,227 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+15
+1490
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+anemometre
+# storage
+db|anemometre_avalon.(1).cnf
+db|anemometre_avalon.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+anemometre.vhd
+86c2572bf23f11d27560ba313eb72afc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_anemometre)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+anemometre:C1
+}
+# macro_sequence
+
+# end
+# entity
+prediv_1000
+# storage
+db|anemometre_avalon.(2).cnf
+db|anemometre_avalon.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+prediv_1s.vhd
+222abec6c39998c513664796c7231a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+anemometre:C1|prediv_1000:C1
+}
+# macro_sequence
+
+# end
+# entity
+Conversion
+# storage
+db|anemometre_avalon.(3).cnf
+db|anemometre_avalon.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+conversion.vhd
+d7fdb2941788b6dc4ea6124b305eb599
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+anemometre:C1|Conversion:C2
+}
+# macro_sequence
+
+# end
+# entity
+prediv_1s
+# storage
+db|anemometre_avalon.(4).cnf
+db|anemometre_avalon.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+prediv_1000.vhd
+24c99efb530393e5a1438d1c62b2d7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+anemometre:C1|prediv_1s:C3
+}
+# macro_sequence
+
+# end
+# entity
+cmd
+# storage
+db|anemometre_avalon.(5).cnf
+db|anemometre_avalon.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cmd.vhd
+6df770c69d6e2d671cef6dd8f4199aea
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+anemometre:C1|cmd:C4
+}
+# macro_sequence
+
+# end
+# entity
+anemometre_avalon
+# storage
+db|anemometre_avalon.(0).cnf
+db|anemometre_avalon.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+anemometre_avalon.vhd
+fbd1aca5a0f2e7d57bdc281384722be
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
