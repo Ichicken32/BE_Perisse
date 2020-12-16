@@ -7579,104 +7579,6 @@ USR
 
 # end
 # entity
-sopc_anem
-# storage
-db|sopc_anemometre.(1).cnf
-db|sopc_anemometre.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-sopc_anem:inst
-}
-# macro_sequence
-
-# end
-# entity
-anemometre_avalon_0_avalon_slave_0_arbitrator
-# storage
-db|sopc_anemometre.(2).cnf
-db|sopc_anemometre.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(anemometre_avalon_0_avalon_slave_0_readdata)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_byteenable)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_dbs_address)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_dbs_write_16)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(anemometre_avalon_0_avalon_slave_0_address)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(anemometre_avalon_0_avalon_slave_0_readdata_from_sa)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(anemometre_avalon_0_avalon_slave_0_writedata)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_byteenable_anemometre_avalon_0_avalon_slave_0)
-1 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-sopc_anem:inst|anemometre_avalon_0_avalon_slave_0_arbitrator:the_anemometre_avalon_0_avalon_slave_0
-}
-# macro_sequence
-
-# end
-# entity
 anemometre_avalon_0
 # storage
 db|sopc_anemometre.(4).cnf
@@ -7937,74 +7839,6 @@ sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:ane
 
 # end
 # entity
-avalon_pwm_0_avalon_slave_0_arbitrator
-# storage
-db|sopc_anemometre.(64).cnf
-db|sopc_anemometre.(64).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(avalon_pwm_0_avalon_slave_0_readdata)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_byteenable)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_dbs_address)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_dbs_write_16)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(avalon_pwm_0_avalon_slave_0_address)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(avalon_pwm_0_avalon_slave_0_readdata_from_sa)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(avalon_pwm_0_avalon_slave_0_writedata)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_byteenable_avalon_pwm_0_avalon_slave_0)
-1 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-sopc_anem:inst|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0
-}
-# macro_sequence
-
-# end
-# entity
 avalon_pwm_0
 # storage
 db|sopc_anemometre.(65).cnf
@@ -8093,6 +7927,192 @@ sopc_anem:inst|avalon_pwm_0:the_avalon_pwm_0|avalon_pwm:avalon_pwm_0
 
 # end
 # entity
+sopc_anemometre
+# storage
+db|sopc_anemometre.(0).cnf
+db|sopc_anemometre.(0).cnf
+# case_insensitive
+# source_file
+sopc_anemometre.bdf
+23431b19dbcc903ba1b068d1b4674e2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+sopc_anem
+# storage
+db|sopc_anemometre.(1).cnf
+db|sopc_anemometre.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sopc_anem.vhd
+c14a28294ef1f6b5b75db25de381a3f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+sopc_anem:inst
+}
+# macro_sequence
+
+# end
+# entity
+anemometre_avalon_0_avalon_slave_0_arbitrator
+# storage
+db|sopc_anemometre.(2).cnf
+db|sopc_anemometre.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sopc_anem.vhd
+c14a28294ef1f6b5b75db25de381a3f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(anemometre_avalon_0_avalon_slave_0_readdata)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_byteenable)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_dbs_address)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_dbs_write_16)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(anemometre_avalon_0_avalon_slave_0_address)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(anemometre_avalon_0_avalon_slave_0_readdata_from_sa)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(anemometre_avalon_0_avalon_slave_0_writedata)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_byteenable_anemometre_avalon_0_avalon_slave_0)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+sopc_anem:inst|anemometre_avalon_0_avalon_slave_0_arbitrator:the_anemometre_avalon_0_avalon_slave_0
+}
+# macro_sequence
+
+# end
+# entity
+avalon_pwm_0_avalon_slave_0_arbitrator
+# storage
+db|sopc_anemometre.(64).cnf
+db|sopc_anemometre.(64).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sopc_anem.vhd
+c14a28294ef1f6b5b75db25de381a3f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(avalon_pwm_0_avalon_slave_0_readdata)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_byteenable)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_dbs_address)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_dbs_write_16)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(avalon_pwm_0_avalon_slave_0_address)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(avalon_pwm_0_avalon_slave_0_readdata_from_sa)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(avalon_pwm_0_avalon_slave_0_writedata)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_byteenable_avalon_pwm_0_avalon_slave_0)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+sopc_anem:inst|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0
+}
+# macro_sequence
+
+# end
+# entity
 boutons_s1_arbitrator
 # storage
 db|sopc_anemometre.(70).cnf
@@ -8104,7 +8124,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8152,7 +8172,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8220,7 +8240,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8320,7 +8340,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8372,7 +8392,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8424,7 +8444,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8480,7 +8500,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8548,7 +8568,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8592,7 +8612,7 @@ ON
 # case_insensitive
 # source_file
 sysid_0.vhd
-1ce9aea93823fb67391e7fecb33b4
+4f357f76ee18ff594a5beaad6aa3914
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8628,7 +8648,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-ccdda1ef937333526834693173e73bd
+c14a28294ef1f6b5b75db25de381a3f8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8642,26 +8662,6 @@ ON
 }
 # hierarchies {
 sopc_anem:inst|sopc_anem_reset_clk_0_domain_synch_module:sopc_anem_reset_clk_0_domain_synch
-}
-# macro_sequence
-
-# end
-# entity
-sopc_anemometre
-# storage
-db|sopc_anemometre.(0).cnf
-db|sopc_anemometre.(0).cnf
-# case_insensitive
-# source_file
-sopc_anemometre.bdf
-75acf99aaf2b588135b6b2d4cf226b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 

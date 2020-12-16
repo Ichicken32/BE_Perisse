@@ -1,7 +1,7 @@
-Quartus II 32-bit
-Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-15
-5474
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+3700
 OFF
 OFF
 OFF
@@ -12,8 +12,6 @@ FV_OFF
 Level2
 0
 0
-0
-0
 VRSM_ON
 VHSM_ON
 0
@@ -22,7 +20,7 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-cmd_emission
+cmd_reception
 # storage
 db|NMEA.(0).cnf
 db|NMEA.(0).cnf
@@ -32,8 +30,8 @@ ON
 }
 # case_insensitive
 # source_file
-cmd_emission.vhd
-be15fb2da448708f5ef691cf14563180
+cmd_reception.vhd
+eea07f96cd6faa17dc351eb01cfb4324
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -48,6 +46,75 @@ ON
 # hierarchies {
 |
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+prediv_1s
+# storage
+db|NMEA.(1).cnf
+db|NMEA.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+prediv_1s.vhd
+24c99efb530393e5a1438d1c62b2d7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+prediv_1s:C1
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+prediv_4800Hz
+# storage
+db|NMEA.(2).cnf
+db|NMEA.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+prediv_4800hz.vhd
+e8e7a583f5c6b54a8a9752b74bda82
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+prediv_4800Hz:C2
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end

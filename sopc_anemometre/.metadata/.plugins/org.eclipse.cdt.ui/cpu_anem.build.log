@@ -1,0 +1,12 @@
+
+**** Build of configuration Nios II for project cpu_anem ****
+
+make all 
+The system cannot find the path specified.
+The system cannot find the path specified.
+Info: Building ../cpu_anem_bsp/
+make --no-print-directory -C ../cpu_anem_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+The syntax of the command is incorrect.
+make: *** [obj/default/hello_world_small.o] Error 1

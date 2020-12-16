@@ -526,13 +526,13 @@ SYSTEM sopc_anem
             }
             Entry anemometre_avalon_0/avalon_slave_0
             {
-               address = "0x00011030";
+               address = "0x00000000";
                span = "0x00000008";
                is_bridge = "0";
             }
             Entry avalon_pwm_0/avalon_slave_0
             {
-               address = "0x00011038";
+               address = "0x00000008";
                span = "0x00000008";
                is_bridge = "0";
             }
@@ -2164,7 +2164,7 @@ SYSTEM sopc_anem
          Has_Clock = "1";
          View 
          {
-            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5FC0F6F9</b> (timestamp: Fri Nov 27, 2020 @1:54 PM)";
+            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5FD6613E</b> (timestamp: Sun Dec 13, 2020 @7:45 PM)";
             MESSAGES 
             {
             }
@@ -2173,7 +2173,7 @@ SYSTEM sopc_anem
       WIZARD_SCRIPT_ARGUMENTS 
       {
          id = "0u";
-         timestamp = "1606481657u";
+         timestamp = "1607885118u";
          regenerate_values = "0";
          MAKE 
          {
@@ -2182,7 +2182,7 @@ SYSTEM sopc_anem
                verifysysid 
                {
                   All_Depends_On = "0";
-                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00011028 --id=0 --timestamp=1606481657";
+                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00011028 --id=0 --timestamp=1607885118";
                   Is_Phony = "1";
                   Target_File = "dummy_verifysysid_file";
                }
@@ -2289,9 +2289,9 @@ SYSTEM sopc_anem
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011030";
+               Offset_Address = "0x00000000";
             }
-            Base_Address = "0x00011030";
+            Base_Address = "0x00000000";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
             {
@@ -2425,9 +2425,9 @@ SYSTEM sopc_anem
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00011038";
+               Offset_Address = "0x00000008";
             }
-            Base_Address = "0x00011038";
+            Base_Address = "0x00000008";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
             {

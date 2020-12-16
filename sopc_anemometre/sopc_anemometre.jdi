@@ -1,6 +1,6 @@
 <sld_project_info>
   <file_info>
-    <file checksum="0x00280E34" device="EP4CE22F17C6" path="sopc_anemometre.sof" usercode="0xFFFFFFFF"/>
+    <file checksum="0x0027F42E" device="EP4CE22F17C6" path="sopc_anemometre.sof" usercode="0xFFFFFFFF"/>
   </file_info>
   <hub_info ir_width="2" node_count="2"/>
   <node_info>

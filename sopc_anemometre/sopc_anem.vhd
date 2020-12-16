@@ -120,7 +120,7 @@ begin
   anemometre_avalon_0_avalon_slave_0_begins_xfer <= NOT d1_reasons_to_wait AND (internal_cpu_0_data_master_qualified_request_anemometre_avalon_0_avalon_slave_0);
   --assign anemometre_avalon_0_avalon_slave_0_readdata_from_sa = anemometre_avalon_0_avalon_slave_0_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
   anemometre_avalon_0_avalon_slave_0_readdata_from_sa <= anemometre_avalon_0_avalon_slave_0_readdata;
-  internal_cpu_0_data_master_requests_anemometre_avalon_0_avalon_slave_0 <= to_std_logic(((Std_Logic_Vector'(cpu_0_data_master_address_to_slave(16 DOWNTO 3) & std_logic_vector'("000")) = std_logic_vector'("10001000000110000")))) AND ((cpu_0_data_master_read OR cpu_0_data_master_write));
+  internal_cpu_0_data_master_requests_anemometre_avalon_0_avalon_slave_0 <= to_std_logic(((Std_Logic_Vector'(cpu_0_data_master_address_to_slave(16 DOWNTO 3) & std_logic_vector'("000")) = std_logic_vector'("00000000000000000")))) AND ((cpu_0_data_master_read OR cpu_0_data_master_write));
   --anemometre_avalon_0_avalon_slave_0_arb_share_counter set values, which is an e_mux
   anemometre_avalon_0_avalon_slave_0_arb_share_set_values <= A_EXT (A_WE_StdLogicVector((std_logic'((internal_cpu_0_data_master_granted_anemometre_avalon_0_avalon_slave_0)) = '1'), std_logic_vector'("00000000000000000000000000000010"), std_logic_vector'("00000000000000000000000000000001")), 2);
   --anemometre_avalon_0_avalon_slave_0_non_bursting_master_requests mux, which is an e_mux
@@ -369,7 +369,7 @@ begin
   avalon_pwm_0_avalon_slave_0_begins_xfer <= NOT d1_reasons_to_wait AND (internal_cpu_0_data_master_qualified_request_avalon_pwm_0_avalon_slave_0);
   --assign avalon_pwm_0_avalon_slave_0_readdata_from_sa = avalon_pwm_0_avalon_slave_0_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
   avalon_pwm_0_avalon_slave_0_readdata_from_sa <= avalon_pwm_0_avalon_slave_0_readdata;
-  internal_cpu_0_data_master_requests_avalon_pwm_0_avalon_slave_0 <= to_std_logic(((Std_Logic_Vector'(cpu_0_data_master_address_to_slave(16 DOWNTO 3) & std_logic_vector'("000")) = std_logic_vector'("10001000000111000")))) AND ((cpu_0_data_master_read OR cpu_0_data_master_write));
+  internal_cpu_0_data_master_requests_avalon_pwm_0_avalon_slave_0 <= to_std_logic(((Std_Logic_Vector'(cpu_0_data_master_address_to_slave(16 DOWNTO 3) & std_logic_vector'("000")) = std_logic_vector'("00000000000001000")))) AND ((cpu_0_data_master_read OR cpu_0_data_master_write));
   --avalon_pwm_0_avalon_slave_0_arb_share_counter set values, which is an e_mux
   avalon_pwm_0_avalon_slave_0_arb_share_set_values <= A_EXT (A_WE_StdLogicVector((std_logic'((internal_cpu_0_data_master_granted_avalon_pwm_0_avalon_slave_0)) = '1'), std_logic_vector'("00000000000000000000000000000010"), std_logic_vector'("00000000000000000000000000000001")), 2);
   --avalon_pwm_0_avalon_slave_0_non_bursting_master_requests mux, which is an e_mux

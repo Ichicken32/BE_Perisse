@@ -21,7 +21,7 @@ set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) anemometre
 set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) PWM_avalon/avalon_pwm_hw.tcl]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) PWM_avalon/avalon_pwm.vhd]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) avalon_pwm_0.vhd]
-set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "4CCC6AD74EC60000017609C4F234"
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "4CCC6AD74EC6000001765D6C0FDE"
 set_global_assignment -entity "sopc_anem" -name IP_TOOL_NAME "sopc"
 set_global_assignment -entity "sopc_anem" -name IP_TOOL_VERSION "11.1sp2"
 set_global_assignment -entity "sopc_anem" -name IP_TOOL_ENV "sopc"

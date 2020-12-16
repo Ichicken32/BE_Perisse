@@ -1,6 +1,6 @@
 Analysis & Synthesis report for NMEA
-Mon Nov 23 13:53:31 2020
-Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+Wed Dec 16 14:20:41 2020
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -13,18 +13,17 @@ Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Editio
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Port Connectivity Checks: "prediv_4800Hz:C2"
+ 10. Port Connectivity Checks: "prediv_1s:C1"
+ 11. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2011 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,24 +39,24 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                       ;
-+------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 23 13:53:31 2020         ;
-; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
-; Revision Name                      ; NMEA                                          ;
-; Top-level Entity Name              ; cmd_emission                                  ;
-; Family                             ; Cyclone IV E                                  ;
-; Total logic elements               ; 0                                             ;
-;     Total combinational functions  ; 0                                             ;
-;     Dedicated logic registers      ; 0                                             ;
-; Total registers                    ; 0                                             ;
-; Total pins                         ; 21                                            ;
-; Total virtual pins                 ; 0                                             ;
-; Total memory bits                  ; 0                                             ;
-; Embedded Multiplier 9-bit elements ; 0                                             ;
-; Total PLLs                         ; 0                                             ;
-+------------------------------------+-----------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Dec 16 14:20:41 2020        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; NMEA                                         ;
+; Top-level Entity Name              ; cmd_reception                                ;
+; Family                             ; Cyclone II                                   ;
+; Total logic elements               ; 0                                            ;
+;     Total combinational functions  ; 0                                            ;
+;     Dedicated logic registers      ; 0                                            ;
+; Total registers                    ; 0                                            ;
+; Total pins                         ; 22                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -65,8 +64,9 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; cmd_emission       ; NMEA               ;
-; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Top-level entity name                                                      ; cmd_reception      ; NMEA               ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Synchronization Register Chain Length                                      ; 2                  ; 3                  ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -84,7 +84,6 @@ applicable agreement for further details.
 ; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
 ; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
 ; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
 ; Parallel Synthesis                                                         ; On                 ; On                 ;
 ; DSP Block Balancing                                                        ; Auto               ; Auto               ;
 ; NOT Gate Push-Back                                                         ; On                 ; On                 ;
@@ -105,14 +104,11 @@ applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
 ; Auto Resource Sharing                                                      ; Off                ; Off                ;
 ; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
@@ -120,12 +116,9 @@ applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 3                  ; 3                  ;
 ; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
@@ -140,7 +133,6 @@ applicable agreement for further details.
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
@@ -155,41 +147,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                        ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                           ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------+
-; cmd_emission.vhd                 ; yes             ; User VHDL File  ; C:/Users/chicken/Desktop/BE_VHDL/NMEA/cmd_emission.vhd ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+
+; prediv_1s.vhd                    ; yes             ; User VHDL File  ; C:/Users/chicken/Desktop/VHDL_BE/BE_Perisse/NMEA/prediv_1s.vhd     ;
+; prediv_4800Hz.vhd                ; yes             ; User VHDL File  ; C:/Users/chicken/Desktop/VHDL_BE/BE_Perisse/NMEA/prediv_4800Hz.vhd ;
+; cmd_reception.vhd                ; yes             ; User VHDL File  ; C:/Users/chicken/Desktop/VHDL_BE/BE_Perisse/NMEA/cmd_reception.vhd ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-;                                             ;               ;
-; Total combinational functions               ; 0             ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 0             ;
-;     -- 3 input functions                    ; 0             ;
-;     -- <=2 input functions                  ; 0             ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 0             ;
-;     -- arithmetic mode                      ; 0             ;
-;                                             ;               ;
-; Total registers                             ; 0             ;
-;     -- Dedicated logic registers            ; 0             ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 21            ;
-; Maximum fan-out node                        ; output~output ;
-; Maximum fan-out                             ; 1             ;
-; Total fan-out                               ; 21            ;
-; Average fan-out                             ; 0.50          ;
-+---------------------------------------------+---------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 22    ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -197,31 +187,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |cmd_emission              ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |cmd_emission       ;              ;
+; |cmd_reception             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |cmd_reception      ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                   ;
-+----------------------------------------+---------------------------------------------+
-; Register name                          ; Reason for Removal                          ;
-+----------------------------------------+---------------------------------------------+
-; output~reg0                            ; Stuck at GND due to stuck port clock_enable ;
-; trame_v[0..17]                         ; Lost fanout                                 ;
-; Total Number of Removed Registers = 19 ;                                             ;
-+----------------------------------------+---------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                 ;
-+---------------+--------------------------------+--------------------------------------------------------------------------------------------+
-; Register name ; Reason for Removal             ; Registers Removed due to This Register                                                     ;
-+---------------+--------------------------------+--------------------------------------------------------------------------------------------+
-; output~reg0   ; Stuck at GND                   ; trame_v[17], trame_v[16], trame_v[15], trame_v[14], trame_v[13], trame_v[12], trame_v[11], ;
-;               ; due to stuck port clock_enable ; trame_v[10], trame_v[9], trame_v[8], trame_v[7], trame_v[6], trame_v[5], trame_v[4],       ;
-;               ;                                ; trame_v[3], trame_v[2], trame_v[1], trame_v[0]                                             ;
-+---------------+--------------------------------+--------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -239,89 +207,133 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "prediv_4800Hz:C2"                                                                      ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "prediv_1s:C1"                                                                          ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
-    Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Nov 23 13:53:28 2020
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Dec 16 14:20:40 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NMEA -c NMEA
-Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file nmea_emission.vhd
-    Info (12022): Found design unit 1: NMEA_emission-ar
-    Info (12023): Found entity 1: NMEA_emission
-Info (12021): Found 1 design units, including 1 entities, in source file nmea_reception.vhd
-    Info (12023): Found entity 1: NMEA_reception
-Info (12021): Found 2 design units, including 1 entities, in source file cmd_emission.vhd
-    Info (12022): Found design unit 1: cmd_emission-ar
-    Info (12023): Found entity 1: cmd_emission
-Info (12021): Found 2 design units, including 1 entities, in source file prediv_1s.vhd
-    Info (12022): Found design unit 1: prediv_1s-ar
-    Info (12023): Found entity 1: prediv_1s
-Info (12021): Found 2 design units, including 1 entities, in source file prediv_4800hz.vhd
-    Info (12022): Found design unit 1: prediv_4800Hz-ar
-    Info (12023): Found entity 1: prediv_4800Hz
-Info (12127): Elaborating entity "cmd_emission" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "output" is stuck at GND
-Info (17049): 18 registers lost all their fanouts during netlist optimizations. The first 18 are displayed below.
-    Info (17050): Register "trame_v[17]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[16]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[15]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[14]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[13]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[12]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[11]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[10]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[9]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[7]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[6]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[5]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[4]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[3]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[2]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[1]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "trame_v[0]" lost all its fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-Warning (21074): Design contains 20 input pin(s) that do not drive logic
+Info: Found 2 design units, including 1 entities, in source file cmd_emission.vhd
+    Info: Found design unit 1: cmd_emission-ar
+    Info: Found entity 1: cmd_emission
+Info: Found 2 design units, including 1 entities, in source file prediv_1s.vhd
+    Info: Found design unit 1: prediv_1s-ar
+    Info: Found entity 1: prediv_1s
+Info: Found 2 design units, including 1 entities, in source file prediv_4800hz.vhd
+    Info: Found design unit 1: prediv_4800Hz-ar
+    Info: Found entity 1: prediv_4800Hz
+Info: Found 2 design units, including 1 entities, in source file cmd_reception.vhd
+    Info: Found design unit 1: cmd_reception-ar
+    Info: Found entity 1: cmd_reception
+Info: Found 2 design units, including 1 entities, in source file nmea.vhd
+    Info: Found design unit 1: NMEA-ar
+    Info: Found entity 1: NMEA
+Info: Elaborating entity "cmd_reception" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at cmd_reception.vhd(12): used implicit default value for signal "S" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at cmd_reception.vhd(12): used implicit default value for signal "C" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at cmd_reception.vhd(12): used implicit default value for signal "D" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at cmd_reception.vhd(12): used implicit default value for signal "U" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at cmd_reception.vhd(19): object "trame_data" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cmd_reception.vhd(20): object "clk_4800" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cmd_reception.vhd(20): object "sec" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at cmd_reception.vhd(51): signal "mode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cmd_reception.vhd(52): signal "in_trame" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cmd_reception.vhd(55): signal "in_trame" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cmd_reception.vhd(58): signal "in_trame" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cmd_reception.vhd(59): signal "in_trame" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cmd_reception.vhd(65): signal "start_stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cmd_reception.vhd(66): signal "start_stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at cmd_reception.vhd(41): inferring latch(es) for signal or variable "trame_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cmd_reception.vhd(41): inferring latch(es) for signal or variable "depart", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cmd_reception.vhd(41): inferring latch(es) for signal or variable "cpt", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cmd_reception.vhd(41): inferring latch(es) for signal or variable "data_valid", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "data_valid" at cmd_reception.vhd(41)
+Info (10041): Inferred latch for "cpt[0]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[1]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[2]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[3]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[4]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[5]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[6]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[7]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[8]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[9]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[10]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[11]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[12]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[13]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[14]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[15]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[16]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[17]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[18]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[19]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[20]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[21]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[22]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[23]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[24]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[25]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[26]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[27]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[28]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[29]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[30]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "cpt[31]" at cmd_reception.vhd(49)
+Info (10041): Inferred latch for "depart" at cmd_reception.vhd(49)
+Info: Elaborating entity "prediv_1s" for hierarchy "prediv_1s:C1"
+Info: Elaborating entity "prediv_4800Hz" for hierarchy "prediv_4800Hz:C2"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "S[0]" is stuck at GND
+    Warning (13410): Pin "S[1]" is stuck at GND
+    Warning (13410): Pin "S[2]" is stuck at GND
+    Warning (13410): Pin "S[3]" is stuck at GND
+    Warning (13410): Pin "C[0]" is stuck at GND
+    Warning (13410): Pin "C[1]" is stuck at GND
+    Warning (13410): Pin "C[2]" is stuck at GND
+    Warning (13410): Pin "C[3]" is stuck at GND
+    Warning (13410): Pin "D[0]" is stuck at GND
+    Warning (13410): Pin "D[1]" is stuck at GND
+    Warning (13410): Pin "D[2]" is stuck at GND
+    Warning (13410): Pin "D[3]" is stuck at GND
+    Warning (13410): Pin "U[0]" is stuck at GND
+    Warning (13410): Pin "U[1]" is stuck at GND
+    Warning (13410): Pin "U[2]" is stuck at GND
+    Warning (13410): Pin "U[3]" is stuck at GND
+    Warning (13410): Pin "data_valid" is stuck at VCC
+Warning: Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "raz_n"
     Warning (15610): No output dependent on input pin "clk"
     Warning (15610): No output dependent on input pin "start_stop"
-    Warning (15610): No output dependent on input pin "sec"
-    Warning (15610): No output dependent on input pin "raz_n"
-    Warning (15610): No output dependent on input pin "S[3]"
-    Warning (15610): No output dependent on input pin "S[2]"
-    Warning (15610): No output dependent on input pin "S[1]"
-    Warning (15610): No output dependent on input pin "S[0]"
-    Warning (15610): No output dependent on input pin "C[3]"
-    Warning (15610): No output dependent on input pin "C[2]"
-    Warning (15610): No output dependent on input pin "C[1]"
-    Warning (15610): No output dependent on input pin "C[0]"
-    Warning (15610): No output dependent on input pin "D[3]"
-    Warning (15610): No output dependent on input pin "D[2]"
-    Warning (15610): No output dependent on input pin "D[1]"
-    Warning (15610): No output dependent on input pin "D[0]"
-    Warning (15610): No output dependent on input pin "U[3]"
-    Warning (15610): No output dependent on input pin "U[2]"
-    Warning (15610): No output dependent on input pin "U[1]"
-    Warning (15610): No output dependent on input pin "U[0]"
-Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 20 input pins
-    Info (21059): Implemented 1 output pins
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 321 megabytes
-    Info: Processing ended: Mon Nov 23 13:53:31 2020
-    Info: Elapsed time: 00:00:03
+    Warning (15610): No output dependent on input pin "mode"
+    Warning (15610): No output dependent on input pin "in_trame"
+Info: Implemented 22 device resources after synthesis - the final resource count might be different
+    Info: Implemented 5 input pins
+    Info: Implemented 17 output pins
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 42 warnings
+    Info: Peak virtual memory: 235 megabytes
+    Info: Processing ended: Wed Dec 16 14:20:41 2020
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -11418,7 +11418,7 @@ sysid_0_control_slave_readdata[31] => sysid_0_control_slave_readdata_from_sa[31]
 
 
 |sopc_anemometre|sopc_anem:inst|sysid_0:the_sysid_0
-address => readdata[0].DATAIN
+address => readdata[1].DATAIN
 address => readdata[30].DATAIN
 address => readdata[28].DATAIN
 address => readdata[27].DATAIN
@@ -11427,17 +11427,16 @@ address => readdata[25].DATAIN
 address => readdata[24].DATAIN
 address => readdata[23].DATAIN
 address => readdata[22].DATAIN
-address => readdata[15].DATAIN
+address => readdata[20].DATAIN
+address => readdata[18].DATAIN
+address => readdata[17].DATAIN
 address => readdata[14].DATAIN
 address => readdata[13].DATAIN
-address => readdata[12].DATAIN
-address => readdata[10].DATAIN
-address => readdata[9].DATAIN
-address => readdata[7].DATAIN
-address => readdata[6].DATAIN
+address => readdata[8].DATAIN
 address => readdata[5].DATAIN
 address => readdata[4].DATAIN
 address => readdata[3].DATAIN
+address => readdata[2].DATAIN
 clock => ~NO_FANOUT~
 reset_n => ~NO_FANOUT~
 
