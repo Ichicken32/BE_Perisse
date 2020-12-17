@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project test_anem_ ****
+
+make all 
+Info: Building ../test_anem__bsp/
+make --no-print-directory -C ../test_anem__bsp/
+[BSP build complete]
+[test_anem_ build complete]
