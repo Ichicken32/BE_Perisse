@@ -1,0 +1,78 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity NMEA_emission_avalon is
+port
+(
+	raz_n, clk : in std_logic;
+	start_stop : in std_logic;
+	S_emission, C_emission, D_emission, U_emission : in std_logic_vector ( 3 downto 0);
+	output, fin_transmit : out std_logic;
+	--avalon
+	clk, chipselect, write_n, reset_n : in std_logic;
+	writedata : in std_logic_vector (15 downto 0);
+	readdata : out std_logic_vector (15 downto 0);
+	address: std_logic_vector (2 downto 0)
+);
+end  NMEA_emission_avalon;
+
+architecture ar of  NMEA_emission_avalon is
+
+component cmd_emission 
+port
+(
+	raz_n, clk : in std_logic;
+	start_stop : in std_logic;
+	S, C, D, U : in std_logic_vector ( 3 downto 0);
+	output, fin_transmit : out std_logic
+);
+end component;
+
+begin
+
+process_write : process (clk, reset_n)
+begin
+if reset_n = '0' then
+	raz_n <= '0';
+	continu <= '0';
+	start_stop <= '0';
+	elsif clk'event and clk = '1' then
+	if chipselect ='1' and write_n = '0' then
+		if address = "00" then
+			raz_n <= writedata(0);
+			start_stop <= writedata(1);
+		end if;
+		if address = "01" then
+			S_emission <= writedata(3 downto 0);
+		end if;
+		if address = "10" then
+			c_emission <= writedata(3 downto 0);
+		end if;
+		if address = "11" then
+			d_emission <= writedata(3 downto 0);
+		end if;
+		if address = "100" then
+			u_emission <= writedata(3 downto 0);
+		end if;
+	end if;
+end if;
+end process;
+
+-- lecture registres
+process_Read : process(address, start_stop, continu, raz_n)
+BEGIN
+case address is
+when "00" => readdata <= X"000"&"0"&fin_transmit&start_stop&raz_n;
+when "01" => readdata <= X"000"&S_emission;
+when "10" => readdata <= X"000"&C_emission;
+when "11" => readdata <= X"000"&D_emission;
+when "100" => readdata <= X"000"&U_emission;
+when others => readdata <= (others => '0');
+end case;
+END PROCESS process_Read ;
+
+C1 : cmd_emission port map(raz_n, clk, start_stop, S_emission, C_emission, D_emission, U_emission, output, fin_transmit);
+
+end ar;

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Dec 17 00:44:26 2020
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
+Revision Name : NMEA_reception_sopc
+Top-level Entity Name : NMEA_reception_sopc
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,400 / 22,320 ( 6 % )
+    Total combinational functions : 1,318 / 22,320 ( 6 % )
+    Dedicated logic registers : 712 / 22,320 ( 3 % )
+Total registers : 712
+Total pins : 11 / 154 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 171,264 / 608,256 ( 28 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

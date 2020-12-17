@@ -1,0 +1,21 @@
+# clk_0
+# cpu_0
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu_0.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu_0.ocp]
+# null
+# sram
+# boutons
+# leds
+# jtag_uart_0
+# sysid_0
+# NMEA_emission_avalon_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ../NMEA_avalon/NMEA_emission_avalon_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) ../NMEA_avalon/NMEA_emission_avalon.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) ../NMEA_avalon/cmd_emission.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) ../NMEA_avalon/prediv_1s.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) ../NMEA_avalon/prediv_4800Hz.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) NMEA_emission_avalon_0.vhd]
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "4CCC6AD74EC6000001766E11B1D3"
+set_global_assignment -entity "sopc_emission" -name IP_TOOL_NAME "sopc"
+set_global_assignment -entity "sopc_emission" -name IP_TOOL_VERSION "11.1sp2"
+set_global_assignment -entity "sopc_emission" -name IP_TOOL_ENV "sopc"

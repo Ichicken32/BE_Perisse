@@ -1,0 +1,78 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity NMEA is
+port
+(
+	raz_n, clk : in std_logic;
+	start_stop_emission, start_stop_reception, in_trame, mode : in std_logic;
+	S_emission, C_emission, D_emission, U_emission : in std_logic_vector ( 3 downto 0);
+	S_reception, C_reception, D_reception, U_reception : out std_logic_vector ( 3 downto 0);
+	output, fin_transmit, data_valid : out std_logic;
+	--avalon
+	writedata : in std_logic_vector (15 downto 0);
+	readdata : out std_logic_vector (15 downto 0);
+	address: std_logic_vector (1 downto 0);
+	chipselect, write_n, reset_n : in std_logic
+);
+end  NMEA;
+
+architecture ar of  NMEA is
+
+component cmd_emission 
+port
+(
+	raz_n, clk : in std_logic;
+	start_stop : in std_logic;
+	S, C, D, U : in std_logic_vector ( 3 downto 0);
+	output, fin_transmit : out std_logic
+);
+end component;
+
+component cmd_reception 
+port
+(
+	raz_n, clk : in std_logic;
+	start_stop, mode : in std_logic;
+	in_trame : in std_logic;
+	S, C, D, U : out std_logic_vector ( 3 downto 0);
+	data_valid : out std_logic
+);
+end component;
+
+begin
+
+C1 : cmd_emission port map(raz_n, clk, start_stop_emission, S_emission, C_emission, D_emission, U_emission, output, fin_transmit);
+
+C2 : cmd_reception port map(raz_n, clk, start_stop_reception, mode, in_trame, S_reception, C_reception, D_reception, U_reception, data_valid);
+
+process_write : process (clk, reset_n)
+begin
+if reset_n = '0' then
+	raz_n <= '0';
+	continu <= '0';
+	start_stop <= '0';
+	elsif clk'event and clk = '1' then
+	if chipselect ='1' and write_n = '0' then
+		if address = "00" then
+			raz_n <= writedata(0);
+			continu <= writedata(1);
+			start_stop <= writedata(2);
+		end if;
+	end if;
+end if;
+end process;
+
+-- lecture registres
+process_Read : process(address, start_stop, continu, raz_n)
+BEGIN
+case address is
+when "00" => readdata <= X"000"&"0"&start_stop&continu&raz_n;
+when "10" => readdata <= X"0"&"000"&data_valid&data_anemometre;
+when others => readdata <= (others => '0');
+end case;
+END PROCESS process_Read ;
+
+end ar;

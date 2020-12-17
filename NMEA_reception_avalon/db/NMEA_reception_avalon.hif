@@ -1,0 +1,163 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+15
+1490
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+NMEA_reception_avalon
+# storage
+db|NMEA_reception_avalon.(0).cnf
+db|NMEA_reception_avalon.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+nmea_reception_avalon.vhd
+6cb42caa7b27b947690b93723db31b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+cmd_reception
+# storage
+db|NMEA_reception_avalon.(1).cnf
+db|NMEA_reception_avalon.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cmd_reception.vhd
+eea07f96cd6faa17dc351eb01cfb4324
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(s)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(c)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(d)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(u)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+cmd_reception:C1
+}
+# macro_sequence
+
+# end
+# entity
+prediv_1s
+# storage
+db|NMEA_reception_avalon.(2).cnf
+db|NMEA_reception_avalon.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+prediv_1s.vhd
+24c99efb530393e5a1438d1c62b2d7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+cmd_reception:C1|prediv_1s:C1
+}
+# macro_sequence
+
+# end
+# entity
+prediv_4800Hz
+# storage
+db|NMEA_reception_avalon.(3).cnf
+db|NMEA_reception_avalon.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+prediv_4800hz.vhd
+e8e7a583f5c6b54a8a9752b74bda82
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+cmd_reception:C1|prediv_4800Hz:C2
+}
+# macro_sequence
+
+# end
+# complete
+

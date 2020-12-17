@@ -60,7 +60,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|boutons:the_boutons
+sopc_anem:inst2|boutons:the_boutons
 }
 # macro_sequence
 
@@ -136,7 +136,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0
+sopc_anem:inst2|cpu_0:the_cpu_0
 }
 # macro_sequence
 
@@ -248,7 +248,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_test_bench:the_cpu_0_test_bench
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_test_bench:the_cpu_0_test_bench
 }
 # macro_sequence
 
@@ -304,7 +304,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a
 }
 # macro_sequence
 
@@ -774,7 +774,7 @@ a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram
 }
 # macro_sequence
 
@@ -1024,7 +1024,7 @@ cpu_0_rf_ram_a.mif
 37e6bb46f593b58f68ad218371e525
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram|altsyncram_hff1:auto_generated
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram|altsyncram_hff1:auto_generated
 }
 # macro_sequence
 
@@ -1080,7 +1080,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b
 }
 # macro_sequence
 
@@ -1550,7 +1550,7 @@ a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram
 }
 # macro_sequence
 
@@ -1800,7 +1800,7 @@ cpu_0_rf_ram_b.mif
 37e6bb46f593b58f68ad218371e525
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_iff1:auto_generated
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_iff1:auto_generated
 }
 # macro_sequence
 
@@ -1868,7 +1868,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci
 }
 # macro_sequence
 
@@ -1904,7 +1904,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_debug:the_cpu_0_nios2_oci_debug
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_debug:the_cpu_0_nios2_oci_debug
 }
 # macro_sequence
 
@@ -1960,7 +1960,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem
 }
 # macro_sequence
 
@@ -2028,7 +2028,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component
 }
 # macro_sequence
 
@@ -2732,7 +2732,7 @@ a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram
 }
 # macro_sequence
 
@@ -3216,7 +3216,7 @@ cpu_0_ociram_default_contents.mif
 1af11c5bc525991f941d9964b186a
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_u972:auto_generated
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_u972:auto_generated
 }
 # macro_sequence
 
@@ -3264,7 +3264,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg
 }
 # macro_sequence
 
@@ -3320,7 +3320,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break
 }
 # macro_sequence
 
@@ -3372,7 +3372,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_xbrk:the_cpu_0_nios2_oci_xbrk
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_xbrk:the_cpu_0_nios2_oci_xbrk
 }
 # macro_sequence
 
@@ -3428,7 +3428,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk
 }
 # macro_sequence
 
@@ -3480,7 +3480,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_itrace:the_cpu_0_nios2_oci_itrace
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_itrace:the_cpu_0_nios2_oci_itrace
 }
 # macro_sequence
 
@@ -3536,7 +3536,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dtrace:the_cpu_0_nios2_oci_dtrace
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dtrace:the_cpu_0_nios2_oci_dtrace
 }
 # macro_sequence
 
@@ -3576,7 +3576,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dtrace:the_cpu_0_nios2_oci_dtrace|cpu_0_nios2_oci_td_mode:cpu_0_nios2_oci_trc_ctrl_td_mode
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dtrace:the_cpu_0_nios2_oci_dtrace|cpu_0_nios2_oci_td_mode:cpu_0_nios2_oci_trc_ctrl_td_mode
 }
 # macro_sequence
 
@@ -3632,7 +3632,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo
 }
 # macro_sequence
 
@@ -3668,7 +3668,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_compute_tm_count:cpu_0_nios2_oci_compute_tm_count_tm_count
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_compute_tm_count:cpu_0_nios2_oci_compute_tm_count_tm_count
 }
 # macro_sequence
 
@@ -3708,7 +3708,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_fifowp_inc:cpu_0_nios2_oci_fifowp_inc_fifowp
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_fifowp_inc:cpu_0_nios2_oci_fifowp_inc_fifowp
 }
 # macro_sequence
 
@@ -3748,7 +3748,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_fifocount_inc:cpu_0_nios2_oci_fifocount_inc_fifocount
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_fifocount_inc:cpu_0_nios2_oci_fifocount_inc_fifocount
 }
 # macro_sequence
 
@@ -3788,7 +3788,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_oci_test_bench:the_cpu_0_oci_test_bench
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_oci_test_bench:the_cpu_0_oci_test_bench
 }
 # macro_sequence
 
@@ -3828,7 +3828,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_pib:the_cpu_0_nios2_oci_pib
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_pib:the_cpu_0_nios2_oci_pib
 }
 # macro_sequence
 
@@ -3880,7 +3880,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im
 }
 # macro_sequence
 
@@ -3944,7 +3944,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component
 }
 # macro_sequence
 
@@ -4678,7 +4678,7 @@ a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram
 }
 # macro_sequence
 
@@ -5188,7 +5188,7 @@ address_a0
 3
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_0a02:auto_generated
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_0a02:auto_generated
 }
 # macro_sequence
 
@@ -5240,7 +5240,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper
 }
 # macro_sequence
 
@@ -5300,7 +5300,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck
 }
 # macro_sequence
 
@@ -5342,10 +5342,10 @@ PARAMETER_SIGNED_DEC
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer2
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer2
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3
 }
 # macro_sequence
 
@@ -5389,7 +5389,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk
 }
 # macro_sequence
 
@@ -5471,7 +5471,7 @@ PARAMETER_STRING
 DEF
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy
 }
 # macro_sequence
 
@@ -5537,7 +5537,7 @@ PARAMETER_SIGNED_DEC
 DEF
 }
 # hierarchies {
-sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst
+sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst
 }
 # macro_sequence
 MASK_8_BITS255INST_BIT_INDEX0MASK_11_BITS2047MFG_BIT_INDEX8MASK_8_BITS255TYPE_BIT_INDEX19MASK_5_BITS31VERION_BIT_INDEX27
@@ -5577,7 +5577,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0
 }
 # macro_sequence
 
@@ -5621,7 +5621,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w
 }
 # macro_sequence
 
@@ -5815,8 +5815,8 @@ a_fffifo.inc
 aa34dd3c645beefc31a3e4ef186db4
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo
 }
 # macro_sequence
 
@@ -5918,8 +5918,8 @@ aclr
 3
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
 }
 # macro_sequence
 
@@ -6024,8 +6024,8 @@ aclr
 3
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
 }
 # macro_sequence
 
@@ -6082,8 +6082,8 @@ aclr
 3
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
 }
 # macro_sequence
 
@@ -6134,8 +6134,8 @@ aclr
 3
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 }
 # macro_sequence
 
@@ -6249,8 +6249,8 @@ data0
 3
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 }
 # macro_sequence
 
@@ -6364,8 +6364,8 @@ address_a0
 3
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
 }
 # macro_sequence
 
@@ -6413,10 +6413,10 @@ aclr
 3
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
 }
 # macro_sequence
 
@@ -6460,7 +6460,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r
 }
 # macro_sequence
 
@@ -6536,7 +6536,7 @@ PARAMETER_SIGNED_DEC
 DEF
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic
+sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic
 }
 # macro_sequence
 
@@ -6584,7 +6584,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|leds:the_leds
+sopc_anem:inst2|leds:the_leds
 }
 # macro_sequence
 
@@ -6636,7 +6636,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|sram:the_sram
+sopc_anem:inst2|sram:the_sram
 }
 # macro_sequence
 
@@ -7130,7 +7130,7 @@ a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
 }
 # hierarchies {
-sopc_anem:inst|sram:the_sram|altsyncram:the_altsyncram
+sopc_anem:inst2|sram:the_sram|altsyncram:the_altsyncram
 }
 # macro_sequence
 
@@ -7404,7 +7404,7 @@ sram.hex
 84606ada6c22abf110ab3dcece3cff7b
 }
 # hierarchies {
-sopc_anem:inst|sram:the_sram|altsyncram:the_altsyncram|altsyncram_p3b1:auto_generated
+sopc_anem:inst2|sram:the_sram|altsyncram:the_altsyncram|altsyncram_p3b1:auto_generated
 }
 # macro_sequence
 
@@ -7617,7 +7617,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0
+sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0
 }
 # macro_sequence
 
@@ -7661,7 +7661,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0
+sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0
 }
 # macro_sequence
 
@@ -7697,7 +7697,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1
+sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1
 }
 # macro_sequence
 
@@ -7727,7 +7727,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|prediv_1000:C1
+sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|prediv_1000:C1
 }
 # macro_sequence
 
@@ -7763,7 +7763,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|Conversion:C2
+sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|Conversion:C2
 }
 # macro_sequence
 
@@ -7793,7 +7793,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|prediv_1s:C3
+sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|prediv_1s:C3
 }
 # macro_sequence
 
@@ -7833,7 +7833,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|cmd:C4
+sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|cmd:C4
 }
 # macro_sequence
 
@@ -7877,7 +7877,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|avalon_pwm_0:the_avalon_pwm_0
+sopc_anem:inst2|avalon_pwm_0:the_avalon_pwm_0
 }
 # macro_sequence
 
@@ -7921,27 +7921,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|avalon_pwm_0:the_avalon_pwm_0|avalon_pwm:avalon_pwm_0
-}
-# macro_sequence
-
-# end
-# entity
-sopc_anemometre
-# storage
-db|sopc_anemometre.(0).cnf
-db|sopc_anemometre.(0).cnf
-# case_insensitive
-# source_file
-sopc_anemometre.bdf
-23431b19dbcc903ba1b068d1b4674e2
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
+sopc_anem:inst2|avalon_pwm_0:the_avalon_pwm_0|avalon_pwm:avalon_pwm_0
 }
 # macro_sequence
 
@@ -7958,7 +7938,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -7971,7 +7951,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-sopc_anem:inst
+sopc_anem:inst2
 }
 # macro_sequence
 
@@ -7988,7 +7968,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8039,7 +8019,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|anemometre_avalon_0_avalon_slave_0_arbitrator:the_anemometre_avalon_0_avalon_slave_0
+sopc_anem:inst2|anemometre_avalon_0_avalon_slave_0_arbitrator:the_anemometre_avalon_0_avalon_slave_0
 }
 # macro_sequence
 
@@ -8056,7 +8036,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8107,7 +8087,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0
+sopc_anem:inst2|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0
 }
 # macro_sequence
 
@@ -8124,7 +8104,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8155,7 +8135,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|boutons_s1_arbitrator:the_boutons_s1
+sopc_anem:inst2|boutons_s1_arbitrator:the_boutons_s1
 }
 # macro_sequence
 
@@ -8172,7 +8152,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8223,7 +8203,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module
+sopc_anem:inst2|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module
 }
 # macro_sequence
 
@@ -8240,7 +8220,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8323,7 +8303,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master
+sopc_anem:inst2|cpu_0_data_master_arbitrator:the_cpu_0_data_master
 }
 # macro_sequence
 
@@ -8340,7 +8320,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8375,7 +8355,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master
+sopc_anem:inst2|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master
 }
 # macro_sequence
 
@@ -8392,7 +8372,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8427,7 +8407,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave
+sopc_anem:inst2|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave
 }
 # macro_sequence
 
@@ -8444,7 +8424,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8483,7 +8463,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|leds_s1_arbitrator:the_leds_s1
+sopc_anem:inst2|leds_s1_arbitrator:the_leds_s1
 }
 # macro_sequence
 
@@ -8500,7 +8480,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8551,7 +8531,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|sram_s1_arbitrator:the_sram_s1
+sopc_anem:inst2|sram_s1_arbitrator:the_sram_s1
 }
 # macro_sequence
 
@@ -8568,7 +8548,7 @@ ON
 # case_insensitive
 # source_file
 sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
+ccdda1ef937333526834693173e73bd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8595,7 +8575,57 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|sysid_0_control_slave_arbitrator:the_sysid_0_control_slave
+sopc_anem:inst2|sysid_0_control_slave_arbitrator:the_sysid_0_control_slave
+}
+# macro_sequence
+
+# end
+# entity
+sopc_anem_reset_clk_0_domain_synch_module
+# storage
+db|sopc_anemometre.(79).cnf
+db|sopc_anemometre.(79).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sopc_anem.vhd
+ccdda1ef937333526834693173e73bd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+sopc_anem:inst2|sopc_anem_reset_clk_0_domain_synch_module:sopc_anem_reset_clk_0_domain_synch
+}
+# macro_sequence
+
+# end
+# entity
+sopc_anemometre
+# storage
+db|sopc_anemometre.(0).cnf
+db|sopc_anemometre.(0).cnf
+# case_insensitive
+# source_file
+sopc_anemometre.bdf
+f09c5491f2ff66efbb14bd2b2171c440
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
@@ -8612,7 +8642,7 @@ ON
 # case_insensitive
 # source_file
 sysid_0.vhd
-4f357f76ee18ff594a5beaad6aa3914
+cc43ce374ca29a708875d8f1b88c67a
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8631,37 +8661,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-sopc_anem:inst|sysid_0:the_sysid_0
-}
-# macro_sequence
-
-# end
-# entity
-sopc_anem_reset_clk_0_domain_synch_module
-# storage
-db|sopc_anemometre.(79).cnf
-db|sopc_anemometre.(79).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-sopc_anem.vhd
-c14a28294ef1f6b5b75db25de381a3f8
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-sopc_anem:inst|sopc_anem_reset_clk_0_domain_synch_module:sopc_anem_reset_clk_0_domain_synch
+sopc_anem:inst2|sysid_0:the_sysid_0
 }
 # macro_sequence
 

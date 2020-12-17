@@ -585,7 +585,7 @@
    <SOPCModuleParameter>
     <C>117</C>
     <Name>dataSlaveMapParam</Name>
-    <Value><![CDATA[<address-map><slave name='anemometre_avalon_0.avalon_slave_0' start='0x0' end='0x8' /><slave name='avalon_pwm_0.avalon_slave_0' start='0x8' end='0x10' /><slave name='sram.s1' start='0x8000' end='0xCE20' /><slave name='cpu_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='leds.s1' start='0x11000' end='0x11010' /><slave name='boutons.s1' start='0x11010' end='0x11020' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11020' end='0x11028' /><slave name='sysid_0.control_slave' start='0x11028' end='0x11030' /></address-map>]]></Value>
+    <Value><![CDATA[<address-map><slave name='sram.s1' start='0x8000' end='0xCE20' /><slave name='cpu_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='leds.s1' start='0x11000' end='0x11010' /><slave name='boutons.s1' start='0x11010' end='0x11020' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11020' end='0x11028' /><slave name='sysid_0.control_slave' start='0x11028' end='0x11030' /><slave name='anemometre_avalon_0.avalon_slave_0' start='0x11030' end='0x11038' /><slave name='avalon_pwm_0.avalon_slave_0' start='0x11038' end='0x11040' /></address-map>]]></Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>118</C>
@@ -920,7 +920,7 @@
    <SOPCModuleParameter>
     <C>185</C>
     <Name>timestamp</Name>
-    <Value>1607885118</Value>
+    <Value>1608137888</Value>
    </SOPCModuleParameter>
   </SOPCModule>
   <SOPCModule>
@@ -1459,7 +1459,7 @@
     </SOPCPort>
    </SOPCInterface>
   </SOPCModule>
-  <SystemID>1567397729</SystemID>
+  <SystemID>1820155713</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2011-08-26</SchemaVersion>
 </ProgramExecution>

@@ -1,10 +1,10 @@
 |sopc_anemometre
-CLOCK_50 => sopc_anem:inst.clk_0
-KEY[0] => sopc_anem:inst.in_port_to_the_boutons[0]
-KEY[1] => sopc_anem:inst.in_port_to_the_boutons[1]
+CLOCK_50 => sopc_anem:inst2.clk_0
+KEY[0] => sopc_anem:inst2.in_port_to_the_boutons[0]
+KEY[1] => sopc_anem:inst2.in_port_to_the_boutons[1]
 
 
-|sopc_anemometre|sopc_anem:inst
+|sopc_anemometre|sopc_anem:inst2
 clk_0 => anemometre_avalon_0_avalon_slave_0_arbitrator:the_anemometre_avalon_0_avalon_slave_0.clk
 clk_0 => anemometre_avalon_0:the_anemometre_avalon_0.clk
 clk_0 => avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0.clk
@@ -29,7 +29,7 @@ in_port_to_the_boutons[0] => boutons:the_boutons.in_port[0]
 in_port_to_the_boutons[1] => boutons:the_boutons.in_port[1]
 
 
-|sopc_anemometre|sopc_anem:inst|anemometre_avalon_0_avalon_slave_0_arbitrator:the_anemometre_avalon_0_avalon_slave_0
+|sopc_anemometre|sopc_anem:inst2|anemometre_avalon_0_avalon_slave_0_arbitrator:the_anemometre_avalon_0_avalon_slave_0
 anemometre_avalon_0_avalon_slave_0_readdata[0] => anemometre_avalon_0_avalon_slave_0_readdata_from_sa[0].DATAIN
 anemometre_avalon_0_avalon_slave_0_readdata[1] => anemometre_avalon_0_avalon_slave_0_readdata_from_sa[1].DATAIN
 anemometre_avalon_0_avalon_slave_0_readdata[2] => anemometre_avalon_0_avalon_slave_0_readdata_from_sa[2].DATAIN
@@ -101,7 +101,7 @@ reset_n => d1_anemometre_avalon_0_avalon_slave_0_end_xfer~reg0.PRESET
 reset_n => d1_reasons_to_wait.ACLR
 
 
-|sopc_anemometre|sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0
+|sopc_anemometre|sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0
 clk => anemometre_avalon:anemometre_avalon_0.clk
 chipselect => anemometre_avalon:anemometre_avalon_0.chipselect
 write_n => anemometre_avalon:anemometre_avalon_0.write_n
@@ -127,7 +127,7 @@ reset_n => anemometre_avalon:anemometre_avalon_0.reset_n
 pwm => anemometre_avalon:anemometre_avalon_0.pwm
 
 
-|sopc_anemometre|sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0
+|sopc_anemometre|sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0
 clk => anemometre:C1.clk_50M
 clk => start_stop.CLK
 clk => continu.CLK
@@ -176,7 +176,7 @@ address[1] => Mux7.IN2
 address[1] => Mux8.IN2
 
 
-|sopc_anemometre|sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1
+|sopc_anemometre|sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1
 raz_n => prediv_1000:C1.araz
 raz_n => Conversion:C2.araz
 raz_n => prediv_1s:C3.araz
@@ -188,7 +188,7 @@ continu => cmd:C4.continu
 in_freq_anemometre => Conversion:C2.in_freq
 
 
-|sopc_anemometre|sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|prediv_1000:C1
+|sopc_anemometre|sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|prediv_1000:C1
 araz => cpt[0].ACLR
 araz => cpt[1].ACLR
 araz => cpt[2].ACLR
@@ -249,7 +249,7 @@ clk => cpt[27].CLK
 clk => clk_sig.CLK
 
 
-|sopc_anemometre|sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|Conversion:C2
+|sopc_anemometre|sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|Conversion:C2
 araz => cpt_sig[0].ACLR
 araz => cpt_sig[1].ACLR
 araz => cpt_sig[2].ACLR
@@ -324,7 +324,7 @@ in_freq => cpt_sig[6].CLK
 in_freq => cpt_sig[7].CLK
 
 
-|sopc_anemometre|sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|prediv_1s:C3
+|sopc_anemometre|sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|prediv_1s:C3
 araz => cpt[0].ACLR
 araz => cpt[1].ACLR
 araz => cpt[2].ACLR
@@ -385,7 +385,7 @@ clk => cpt[27].CLK
 clk => clk_sig.CLK
 
 
-|sopc_anemometre|sopc_anem:inst|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|cmd:C4
+|sopc_anemometre|sopc_anem:inst2|anemometre_avalon_0:the_anemometre_avalon_0|anemometre_avalon:anemometre_avalon_0|anemometre:C1|cmd:C4
 araz => data_out.OUTPUTSELECT
 araz => data_out.OUTPUTSELECT
 araz => data_out.OUTPUTSELECT
@@ -448,7 +448,7 @@ data_in[7] => data_out.DATAB
 data_in[7] => data_sig[7].DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0
+|sopc_anemometre|sopc_anem:inst2|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0
 avalon_pwm_0_avalon_slave_0_readdata[0] => avalon_pwm_0_avalon_slave_0_readdata_from_sa[0].DATAIN
 avalon_pwm_0_avalon_slave_0_readdata[1] => avalon_pwm_0_avalon_slave_0_readdata_from_sa[1].DATAIN
 avalon_pwm_0_avalon_slave_0_readdata[2] => avalon_pwm_0_avalon_slave_0_readdata_from_sa[2].DATAIN
@@ -520,7 +520,7 @@ reset_n => d1_avalon_pwm_0_avalon_slave_0_end_xfer~reg0.PRESET
 reset_n => d1_reasons_to_wait.ACLR
 
 
-|sopc_anemometre|sopc_anem:inst|avalon_pwm_0:the_avalon_pwm_0
+|sopc_anemometre|sopc_anem:inst2|avalon_pwm_0:the_avalon_pwm_0
 clk => avalon_pwm:avalon_pwm_0.clk
 chipselect => avalon_pwm:avalon_pwm_0.chipselect
 write_n => avalon_pwm:avalon_pwm_0.write_n
@@ -545,7 +545,7 @@ address[1] => avalon_pwm:avalon_pwm_0.address[1]
 reset_n => avalon_pwm:avalon_pwm_0.reset_n
 
 
-|sopc_anemometre|sopc_anem:inst|avalon_pwm_0:the_avalon_pwm_0|avalon_pwm:avalon_pwm_0
+|sopc_anemometre|sopc_anem:inst2|avalon_pwm_0:the_avalon_pwm_0|avalon_pwm:avalon_pwm_0
 clk => control[0].CLK
 clk => control[1].CLK
 clk => duty[0].CLK
@@ -707,7 +707,7 @@ address[1] => Mux14.IN1
 address[1] => Mux15.IN1
 
 
-|sopc_anemometre|sopc_anem:inst|boutons_s1_arbitrator:the_boutons_s1
+|sopc_anemometre|sopc_anem:inst2|boutons_s1_arbitrator:the_boutons_s1
 boutons_s1_readdata[0] => boutons_s1_readdata_from_sa[0].DATAIN
 boutons_s1_readdata[1] => boutons_s1_readdata_from_sa[1].DATAIN
 boutons_s1_readdata[2] => boutons_s1_readdata_from_sa[2].DATAIN
@@ -768,7 +768,7 @@ reset_n => d1_boutons_s1_end_xfer~reg0.PRESET
 reset_n => d1_reasons_to_wait.ACLR
 
 
-|sopc_anemometre|sopc_anem:inst|boutons:the_boutons
+|sopc_anemometre|sopc_anem:inst2|boutons:the_boutons
 address[0] => Equal0.IN63
 address[1] => Equal0.IN62
 clk => readdata[0]~reg0.CLK
@@ -839,7 +839,7 @@ reset_n => readdata[30]~reg0.ACLR
 reset_n => readdata[31]~reg0.ACLR
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module
+|sopc_anemometre|sopc_anem:inst2|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module
 clk => d1_cpu_0_jtag_debug_module_end_xfer~reg0.CLK
 clk => cpu_0_jtag_debug_module_reg_firsttransfer.CLK
 clk => cpu_0_jtag_debug_module_arb_addend[0].CLK
@@ -980,7 +980,7 @@ reset_n => cpu_0_jtag_debug_module_arb_addend[1].ACLR
 reset_n => cpu_0_jtag_debug_module_reg_firsttransfer.PRESET
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master
+|sopc_anemometre|sopc_anem:inst2|cpu_0_data_master_arbitrator:the_cpu_0_data_master
 anemometre_avalon_0_avalon_slave_0_readdata_from_sa[0] => p1_dbs_16_reg_segment_0[0].DATAB
 anemometre_avalon_0_avalon_slave_0_readdata_from_sa[0] => cpu_0_data_master_readdata.IN0
 anemometre_avalon_0_avalon_slave_0_readdata_from_sa[1] => p1_dbs_16_reg_segment_0[1].DATAB
@@ -1835,7 +1835,7 @@ sysid_0_control_slave_readdata_from_sa[30] => cpu_0_data_master_readdata.IN1
 sysid_0_control_slave_readdata_from_sa[31] => cpu_0_data_master_readdata.IN1
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master
+|sopc_anemometre|sopc_anem:inst2|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master
 clk => ~NO_FANOUT~
 cpu_0_instruction_master_address[0] => cpu_0_instruction_master_address_to_slave[0].DATAIN
 cpu_0_instruction_master_address[1] => cpu_0_instruction_master_address_to_slave[1].DATAIN
@@ -2004,7 +2004,7 @@ sram_s1_readdata_from_sa[30] => cpu_0_instruction_master_readdata.IN1
 sram_s1_readdata_from_sa[31] => cpu_0_instruction_master_readdata.IN1
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0
 clk => cpu_0_test_bench:the_cpu_0_test_bench.clk
 clk => R_ctrl_force_src2_zero.CLK
 clk => R_ctrl_rdctl_inst.CLK
@@ -2995,7 +2995,7 @@ reset_n => R_ctrl_force_src2_zero.ACLR
 reset_n => cpu_0_nios2_oci:the_cpu_0_nios2_oci.reset
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_test_bench:the_cpu_0_test_bench
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_test_bench:the_cpu_0_test_bench
 D_iw[0] => ~NO_FANOUT~
 D_iw[1] => ~NO_FANOUT~
 D_iw[2] => ~NO_FANOUT~
@@ -3453,7 +3453,7 @@ i_waitrequest => ~NO_FANOUT~
 reset_n => internal_d_write1.ACLR
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a
 clock => altsyncram:the_altsyncram.clock0
 data[0] => altsyncram:the_altsyncram.data_a[0]
 data[1] => altsyncram:the_altsyncram.data_a[1]
@@ -3500,7 +3500,7 @@ wraddress[4] => altsyncram:the_altsyncram.address_a[4]
 wren => altsyncram:the_altsyncram.wren_a
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram
 wren_a => altsyncram_hff1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -3593,7 +3593,7 @@ byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram|altsyncram_hff1:auto_generated
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram|altsyncram_hff1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4012,7 +4012,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b
 clock => altsyncram:the_altsyncram.clock0
 data[0] => altsyncram:the_altsyncram.data_a[0]
 data[1] => altsyncram:the_altsyncram.data_a[1]
@@ -4059,7 +4059,7 @@ wraddress[4] => altsyncram:the_altsyncram.address_a[4]
 wren => altsyncram:the_altsyncram.wren_a
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram
 wren_a => altsyncram_iff1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -4152,7 +4152,7 @@ byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_iff1:auto_generated
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_iff1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4571,7 +4571,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci
 D_valid => cpu_0_nios2_oci_xbrk:the_cpu_0_nios2_oci_xbrk.D_valid
 E_st_data[0] => cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk.E_st_data[0]
 E_st_data[1] => cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk.E_st_data[1]
@@ -4823,7 +4823,7 @@ writedata[31] => cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem.writedata[31]
 writedata[31] => cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg.writedata[31]
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_debug:the_cpu_0_nios2_oci_debug
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_debug:the_cpu_0_nios2_oci_debug
 clk => monitor_go~reg0.CLK
 clk => monitor_error~reg0.CLK
 clk => monitor_ready~reg0.CLK
@@ -4897,7 +4897,7 @@ take_action_ocireg => process_1.IN1
 xbrk_break => oci_hbreak_req.IN1
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem
 address[0] => cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component.address_a[0]
 address[1] => cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component.address_a[1]
 address[2] => cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component.address_a[2]
@@ -5216,7 +5216,7 @@ writedata[30] => cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dra
 writedata[31] => cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component.data_a[31]
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component
 address_a[0] => altsyncram:the_altsyncram.address_a[0]
 address_a[1] => altsyncram:the_altsyncram.address_a[1]
 address_a[2] => altsyncram:the_altsyncram.address_a[2]
@@ -5309,7 +5309,7 @@ wren_a => altsyncram:the_altsyncram.wren_a
 wren_b => altsyncram:the_altsyncram.wren_b
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram
 wren_a => altsyncram_u972:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => altsyncram_u972:auto_generated.wren_b
@@ -5411,7 +5411,7 @@ byteena_a[3] => altsyncram_u972:auto_generated.byteena_a[3]
 byteena_b[0] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_u972:auto_generated
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_u972:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -6214,7 +6214,7 @@ wren_b => ram_block1a30.PORTBWE
 wren_b => ram_block1a31.PORTBWE
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg
 address[0] => Equal0.IN17
 address[0] => Equal1.IN17
 address[1] => Equal0.IN16
@@ -6339,7 +6339,7 @@ writedata[30] => ~NO_FANOUT~
 writedata[31] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break
 clk => trigger_state.CLK
 clk => break_readreg[0]~reg0.CLK
 clk => break_readreg[1]~reg0.CLK
@@ -6616,7 +6616,7 @@ xbrk_goto0 => process_2.IN1
 xbrk_goto1 => process_2.IN1
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_xbrk:the_cpu_0_nios2_oci_xbrk
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_xbrk:the_cpu_0_nios2_oci_xbrk
 D_valid => ~NO_FANOUT~
 E_valid => xbrk_break~reg0.ENA
 F_pc[0] => ~NO_FANOUT~
@@ -6672,7 +6672,7 @@ xbrk_ctrl3[6] => ~NO_FANOUT~
 xbrk_ctrl3[7] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk
 E_st_data[0] => cpu_d_writedata[0].DATAIN
 E_st_data[1] => cpu_d_writedata[1].DATAIN
 E_st_data[2] => cpu_d_writedata[2].DATAIN
@@ -6776,7 +6776,7 @@ reset_n => dbrk_trigout~reg0.ACLR
 reset_n => internal_dbrk_break.ACLR
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_itrace:the_cpu_0_nios2_oci_itrace
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_itrace:the_cpu_0_nios2_oci_itrace
 clk => internal_dct_count[0].CLK
 clk => internal_dct_count[1].CLK
 clk => internal_dct_count[2].CLK
@@ -6942,7 +6942,7 @@ xbrk_traceon => ~NO_FANOUT~
 xbrk_wrap_traceoff => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dtrace:the_cpu_0_nios2_oci_dtrace
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dtrace:the_cpu_0_nios2_oci_dtrace
 clk => dtm[0]~reg0.CLK
 clk => dtm[1]~reg0.CLK
 clk => dtm[2]~reg0.CLK
@@ -7189,7 +7189,7 @@ trc_ctrl[14] => ~NO_FANOUT~
 trc_ctrl[15] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dtrace:the_cpu_0_nios2_oci_dtrace|cpu_0_nios2_oci_td_mode:cpu_0_nios2_oci_trc_ctrl_td_mode
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dtrace:the_cpu_0_nios2_oci_dtrace|cpu_0_nios2_oci_td_mode:cpu_0_nios2_oci_trc_ctrl_td_mode
 ctrl[0] => ~NO_FANOUT~
 ctrl[1] => ~NO_FANOUT~
 ctrl[2] => ~NO_FANOUT~
@@ -7205,7 +7205,7 @@ ctrl[7] => Mux1.IN4
 ctrl[8] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo
 atm[0] => ~NO_FANOUT~
 atm[1] => ~NO_FANOUT~
 atm[2] => ~NO_FANOUT~
@@ -7371,7 +7371,7 @@ test_has_ended => cpu_0_oci_test_bench:the_cpu_0_oci_test_bench.test_has_ended
 trc_on => trc_this.IN1
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_compute_tm_count:cpu_0_nios2_oci_compute_tm_count_tm_count
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_compute_tm_count:cpu_0_nios2_oci_compute_tm_count_tm_count
 atm_valid => Mux0.IN9
 atm_valid => Mux1.IN9
 dtm_valid => Mux0.IN10
@@ -7380,7 +7380,7 @@ itm_valid => Mux0.IN8
 itm_valid => Mux1.IN8
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_fifowp_inc:cpu_0_nios2_oci_fifowp_inc_fifowp
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_fifowp_inc:cpu_0_nios2_oci_fifowp_inc_fifowp
 free2 => process_0.IN1
 free3 => process_0.IN1
 tm_count[0] => Equal0.IN63
@@ -7391,7 +7391,7 @@ tm_count[1] => LessThan0.IN3
 tm_count[1] => LessThan1.IN3
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_fifocount_inc:cpu_0_nios2_oci_fifocount_inc_fifocount
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_nios2_oci_fifocount_inc:cpu_0_nios2_oci_fifocount_inc_fifocount
 empty => fifocount_inc.OUTPUTSELECT
 empty => fifocount_inc.OUTPUTSELECT
 empty => fifocount_inc.OUTPUTSELECT
@@ -7409,7 +7409,7 @@ tm_count[1] => LessThan1.IN3
 tm_count[1] => fifocount_inc.DATAB
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_oci_test_bench:the_cpu_0_oci_test_bench
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_oci_test_bench:the_cpu_0_oci_test_bench
 dct_buffer[0] => ~NO_FANOUT~
 dct_buffer[1] => ~NO_FANOUT~
 dct_buffer[2] => ~NO_FANOUT~
@@ -7448,7 +7448,7 @@ test_ending => ~NO_FANOUT~
 test_has_ended => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_pib:the_cpu_0_nios2_oci_pib
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_pib:the_cpu_0_nios2_oci_pib
 clk => ~NO_FANOUT~
 clkx2 => ~NO_FANOUT~
 jrst_n => ~NO_FANOUT~
@@ -7490,7 +7490,7 @@ tw[34] => ~NO_FANOUT~
 tw[35] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im
 clk => cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component.clock0
 clk => trc_jtag_addr[0].CLK
 clk => trc_jtag_addr[1].CLK
@@ -7680,7 +7680,7 @@ tw[35] => WideOr0.IN3
 tw[35] => cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component.data_a[35]
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component
 address_a[0] => altsyncram:the_altsyncram.address_a[0]
 address_a[1] => altsyncram:the_altsyncram.address_a[1]
 address_a[2] => altsyncram:the_altsyncram.address_a[2]
@@ -7775,7 +7775,7 @@ wren_a => altsyncram:the_altsyncram.wren_a
 wren_b => altsyncram:the_altsyncram.wren_b
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram
 wren_a => altsyncram_0a02:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => altsyncram_0a02:auto_generated.wren_b
@@ -7880,7 +7880,7 @@ byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_0a02:auto_generated
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_0a02:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -8675,7 +8675,7 @@ wren_b => ram_block1a34.PORTBWE
 wren_b => ram_block1a35.PORTBWE
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper
 MonDReg[0] => cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck.MonDReg[0]
 MonDReg[1] => cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck.MonDReg[1]
 MonDReg[2] => cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck.MonDReg[2]
@@ -8801,7 +8801,7 @@ trigbrktype => cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck.trigb
 trigger_state_1 => cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck.trigger_state_1
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck
 MonDReg[0] => Mux36.IN0
 MonDReg[1] => Mux35.IN0
 MonDReg[2] => Mux34.IN0
@@ -9141,7 +9141,7 @@ vs_uir => DRsize[1].ENA
 vs_uir => DRsize[2].ENA
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -9149,7 +9149,7 @@ reset_n => din_s1.ACLR
 din => din_s1.DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -9157,7 +9157,7 @@ reset_n => din_s1.ACLR
 din => din_s1.DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk
 clk => altera_std_synchronizer:the_altera_std_synchronizer2.clk
 clk => internal_jdo1[0].CLK
 clk => internal_jdo1[1].CLK
@@ -9249,7 +9249,7 @@ vs_udr => altera_std_synchronizer:the_altera_std_synchronizer2.din
 vs_uir => altera_std_synchronizer:the_altera_std_synchronizer3.din
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer2
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer2
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -9257,7 +9257,7 @@ reset_n => din_s1.ACLR
 din => din_s1.DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -9265,13 +9265,13 @@ reset_n => din_s1.ACLR
 din => din_s1.DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy
 tdo => tdo.IN1
 ir_out[0] => ir_out[0].IN1
 ir_out[1] => ir_out[1].IN1
 
 
-|sopc_anemometre|sopc_anem:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst
+|sopc_anemometre|sopc_anem:inst2|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst
 usr_tdo => tdo.DATAIN
 usr_ir_out[0] => ir_out[0].DATAIN
 usr_ir_out[1] => ir_out[1].DATAIN
@@ -9311,7 +9311,7 @@ ir_in[0] => usr_ir_in[0].DATAIN
 ir_in[1] => usr_ir_in[1].DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave
 clk => d1_jtag_uart_0_avalon_jtag_slave_end_xfer~reg0.CLK
 cpu_0_data_master_address_to_slave[0] => ~NO_FANOUT~
 cpu_0_data_master_address_to_slave[1] => ~NO_FANOUT~
@@ -9412,7 +9412,7 @@ reset_n => jtag_uart_0_avalon_jtag_slave_reset_n.DATAIN
 reset_n => d1_jtag_uart_0_avalon_jtag_slave_end_xfer~reg0.PRESET
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0
 av_address => ien_AF.OUTPUTSELECT
 av_address => ien_AE.OUTPUTSELECT
 av_address => ac.OUTPUTSELECT
@@ -9503,7 +9503,7 @@ rst_n => t_dav.PRESET
 rst_n => r_val.ACLR
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w
 clk => scfifo:wfifo.clock
 fifo_clear => scfifo:wfifo.aclr
 fifo_wdata[0] => scfifo:wfifo.data[0]
@@ -9518,7 +9518,7 @@ fifo_wr => scfifo:wfifo.wrreq
 rd_wfifo => scfifo:wfifo.rdreq
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -9534,7 +9534,7 @@ aclr => scfifo_jr21:auto_generated.aclr
 sclr => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
 aclr => a_dpfifo_q131:dpfifo.aclr
 clock => a_dpfifo_q131:dpfifo.clock
 data[0] => a_dpfifo_q131:dpfifo.data[0]
@@ -9549,7 +9549,7 @@ rdreq => a_dpfifo_q131:dpfifo.rreq
 wrreq => a_dpfifo_q131:dpfifo.wreq
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
 aclr => a_fefifo_7cf:fifo_state.aclr
 aclr => cntr_1ob:rd_ptr_count.aclr
 aclr => cntr_1ob:wr_ptr.aclr
@@ -9579,7 +9579,7 @@ wreq => dpram_nl21:FIFOram.wren
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -9603,7 +9603,7 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -9623,7 +9623,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 data[0] => altsyncram_r1m1:altsyncram1.data_a[0]
 data[1] => altsyncram_r1m1:altsyncram1.data_a[1]
 data[2] => altsyncram_r1m1:altsyncram1.data_a[2]
@@ -9650,7 +9650,7 @@ wraddress[5] => altsyncram_r1m1:altsyncram1.address_a[5]
 wren => altsyncram_r1m1:altsyncram1.wren_a
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -9797,7 +9797,7 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -9811,7 +9811,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -9825,7 +9825,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r
 clk => scfifo:rfifo.clock
 fifo_clear => scfifo:rfifo.aclr
 fifo_rd => scfifo:rfifo.rdreq
@@ -9841,7 +9841,7 @@ t_dat[7] => scfifo:rfifo.data[7]
 wr_rfifo => scfifo:rfifo.wrreq
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -9857,7 +9857,7 @@ aclr => scfifo_jr21:auto_generated.aclr
 sclr => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
 aclr => a_dpfifo_q131:dpfifo.aclr
 clock => a_dpfifo_q131:dpfifo.clock
 data[0] => a_dpfifo_q131:dpfifo.data[0]
@@ -9872,7 +9872,7 @@ rdreq => a_dpfifo_q131:dpfifo.rreq
 wrreq => a_dpfifo_q131:dpfifo.wreq
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
 aclr => a_fefifo_7cf:fifo_state.aclr
 aclr => cntr_1ob:rd_ptr_count.aclr
 aclr => cntr_1ob:wr_ptr.aclr
@@ -9902,7 +9902,7 @@ wreq => dpram_nl21:FIFOram.wren
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -9926,7 +9926,7 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -9946,7 +9946,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 data[0] => altsyncram_r1m1:altsyncram1.data_a[0]
 data[1] => altsyncram_r1m1:altsyncram1.data_a[1]
 data[2] => altsyncram_r1m1:altsyncram1.data_a[2]
@@ -9973,7 +9973,7 @@ wraddress[5] => altsyncram_r1m1:altsyncram1.address_a[5]
 wren => altsyncram_r1m1:altsyncram1.wren_a
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -10120,7 +10120,7 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -10134,7 +10134,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -10148,7 +10148,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|sopc_anemometre|sopc_anem:inst|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic
+|sopc_anemometre|sopc_anem:inst2|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic
 raw_tck => write_stalled.CLK
 raw_tck => wdata[0].CLK
 raw_tck => wdata[1].CLK
@@ -10356,7 +10356,7 @@ t_dav => always2.IN1
 t_dav => tck_t_dav.DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|leds_s1_arbitrator:the_leds_s1
+|sopc_anemometre|sopc_anem:inst2|leds_s1_arbitrator:the_leds_s1
 clk => d1_leds_s1_end_xfer~reg0.CLK
 clk => d1_reasons_to_wait.CLK
 cpu_0_data_master_address_to_slave[0] => ~NO_FANOUT~
@@ -10451,7 +10451,7 @@ reset_n => d1_leds_s1_end_xfer~reg0.PRESET
 reset_n => d1_reasons_to_wait.ACLR
 
 
-|sopc_anemometre|sopc_anem:inst|leds:the_leds
+|sopc_anemometre|sopc_anem:inst2|leds:the_leds
 address[0] => Equal0.IN63
 address[1] => Equal0.IN62
 chipselect => process_0.IN0
@@ -10506,7 +10506,7 @@ writedata[30] => ~NO_FANOUT~
 writedata[31] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|sram_s1_arbitrator:the_sram_s1
+|sopc_anemometre|sopc_anem:inst2|sram_s1_arbitrator:the_sram_s1
 clk => d1_sram_s1_end_xfer~reg0.CLK
 clk => sram_s1_reg_firsttransfer.CLK
 clk => sram_s1_arb_addend[0].CLK
@@ -10651,7 +10651,7 @@ sram_s1_readdata[30] => sram_s1_readdata_from_sa[30].DATAIN
 sram_s1_readdata[31] => sram_s1_readdata_from_sa[31].DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|sram:the_sram
+|sopc_anemometre|sopc_anem:inst2|sram:the_sram
 address[0] => altsyncram:the_altsyncram.address_a[0]
 address[1] => altsyncram:the_altsyncram.address_a[1]
 address[2] => altsyncram:the_altsyncram.address_a[2]
@@ -10708,7 +10708,7 @@ writedata[30] => altsyncram:the_altsyncram.data_a[30]
 writedata[31] => altsyncram:the_altsyncram.data_a[31]
 
 
-|sopc_anemometre|sopc_anem:inst|sram:the_sram|altsyncram:the_altsyncram
+|sopc_anemometre|sopc_anem:inst2|sram:the_sram|altsyncram:the_altsyncram
 wren_a => altsyncram_p3b1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -10777,7 +10777,7 @@ byteena_a[3] => altsyncram_p3b1:auto_generated.byteena_a[3]
 byteena_b[0] => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|sram:the_sram|altsyncram:the_altsyncram|altsyncram_p3b1:auto_generated
+|sopc_anemometre|sopc_anem:inst2|sram:the_sram|altsyncram:the_altsyncram|altsyncram_p3b1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -11356,7 +11356,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|sopc_anemometre|sopc_anem:inst|sysid_0_control_slave_arbitrator:the_sysid_0_control_slave
+|sopc_anemometre|sopc_anem:inst2|sysid_0_control_slave_arbitrator:the_sysid_0_control_slave
 clk => d1_sysid_0_control_slave_end_xfer~reg0.CLK
 clk => d1_reasons_to_wait.CLK
 cpu_0_data_master_address_to_slave[0] => ~NO_FANOUT~
@@ -11417,8 +11417,8 @@ sysid_0_control_slave_readdata[30] => sysid_0_control_slave_readdata_from_sa[30]
 sysid_0_control_slave_readdata[31] => sysid_0_control_slave_readdata_from_sa[31].DATAIN
 
 
-|sopc_anemometre|sopc_anem:inst|sysid_0:the_sysid_0
-address => readdata[1].DATAIN
+|sopc_anemometre|sopc_anem:inst2|sysid_0:the_sysid_0
+address => readdata[5].DATAIN
 address => readdata[30].DATAIN
 address => readdata[28].DATAIN
 address => readdata[27].DATAIN
@@ -11428,20 +11428,18 @@ address => readdata[24].DATAIN
 address => readdata[23].DATAIN
 address => readdata[22].DATAIN
 address => readdata[20].DATAIN
-address => readdata[18].DATAIN
+address => readdata[19].DATAIN
 address => readdata[17].DATAIN
-address => readdata[14].DATAIN
 address => readdata[13].DATAIN
-address => readdata[8].DATAIN
-address => readdata[5].DATAIN
-address => readdata[4].DATAIN
-address => readdata[3].DATAIN
-address => readdata[2].DATAIN
+address => readdata[12].DATAIN
+address => readdata[11].DATAIN
+address => readdata[10].DATAIN
+address => readdata[7].DATAIN
 clock => ~NO_FANOUT~
 reset_n => ~NO_FANOUT~
 
 
-|sopc_anemometre|sopc_anem:inst|sopc_anem_reset_clk_0_domain_synch_module:sopc_anem_reset_clk_0_domain_synch
+|sopc_anemometre|sopc_anem:inst2|sopc_anem_reset_clk_0_domain_synch_module:sopc_anem_reset_clk_0_domain_synch
 clk => data_out~reg0.CLK
 clk => data_in_d1.CLK
 data_in => data_in_d1.DATAIN

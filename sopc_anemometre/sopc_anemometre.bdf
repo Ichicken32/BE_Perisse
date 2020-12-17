@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 328 224 496 240)
+	(rect 328 208 496 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLOCK_50" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
@@ -34,7 +34,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 272 240 328 256))
+	(annotation_block (location)(rect 272 224 328 240))
 )
 (pin
 	(input)
@@ -55,7 +55,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1000 368 1176 384)
+	(rect 1072 400 1248 416)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "LER[7..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
@@ -68,7 +68,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1176 384 1232 432))
+	(annotation_block (location)(rect 1248 416 1304 464))
 )
 (symbol
 	(rect 448 232 464 264)
@@ -89,7 +89,7 @@ applicable agreement for further details.
 (symbol
 	(rect 544 200 960 408)
 	(text "sopc_anem" (rect 4 0 83 16)(font "Arial" (font_size 10)))
-	(text "inst" (rect 4 192 21 204)(font "Arial" ))
+	(text "inst2" (rect 4 192 27 204)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -141,16 +141,32 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 544 248)
-	(pt 464 248)
+	(pt 544 280)
+	(pt 544 312)
 )
 (connector
-	(pt 496 232)
+	(pt 536 232)
+	(pt 536 216)
+)
+(connector
 	(pt 544 232)
+	(pt 536 232)
 )
 (connector
-	(pt 544 344)
+	(pt 536 216)
+	(pt 496 216)
+)
+(connector
+	(pt 464 248)
+	(pt 544 248)
+)
+(connector
+	(pt 544 312)
+	(pt 960 312)
+)
+(connector
 	(pt 496 344)
+	(pt 544 344)
 	(bus)
 )
 (connector
@@ -159,10 +175,12 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 960 312)
-	(pt 544 312)
+	(pt 1000 376)
+	(pt 1000 408)
+	(bus)
 )
 (connector
-	(pt 544 312)
-	(pt 544 280)
+	(pt 1072 408)
+	(pt 1000 408)
+	(bus)
 )
